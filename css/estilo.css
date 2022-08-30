@@ -1,0 +1,15 @@
+body{
+    display: grid;
+    grid-template-rows: [y1]30% [y2]50% [y3]20%;
+}
+header{
+    background-color: aquamarine;
+    grid-row-start: y1;
+}
+body{
+    grid-row-start:y2;
+    background-color: blue;
+}
+footer{
+    grid-row-start: y3;
+}
