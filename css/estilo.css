@@ -4,7 +4,8 @@ body{
     background-image: url('/imagenes/clash.jpg');
     background-repeat: no-repeat;
     background-size:cover ;
-    color: aliceblue;
+    color:aliceblue;
+
 }
 header{
     grid-row-start: y1;
@@ -13,5 +14,6 @@ main{
     grid-row-start:y2; 
 }
 footer{
-    grid-row-start: y3; 
+    grid-row-start: y3;
+    
 }
