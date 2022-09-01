@@ -1,17 +1,17 @@
 body{
     display: grid ;
     grid-template-rows: [y1]20%[y2]720px[y3]10%;
+    background-image: url('/imagenes/clash.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+    color: aliceblue;
 }
 header{
-    background-color: aquamarine;
     grid-row-start: y1;
 }
 main{
-    grid-row-start:y2;
-    background-color: blue;
+    grid-row-start:y2; 
 }
 footer{
-    color: antiquewhite;
-    grid-row-start: y3;
-    background-color: black;
+    grid-row-start: y3; 
 }
