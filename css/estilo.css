@@ -4,7 +4,7 @@ body{
     grid-template-rows: [y1]20%[y2]720px[y3]10%;
     background-image: url('/imagenes/clash.jpg');
     background-size: cover;
-    color:antiquewhite
+    color:antiquewhite;
 }
 header{
     grid-row-start: y1;
@@ -55,6 +55,7 @@ main div{
 /*Colocamos en negritas los nombres de la lista*/
 #oleq li{
     font-weight: bold;
+    margin: 2%;
 }
 /*Ajuste del titulo del bloque 3*/
 #diveq3 h1{
