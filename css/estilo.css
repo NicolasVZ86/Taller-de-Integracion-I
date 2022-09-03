@@ -1,19 +1,19 @@
+/*Gid y fondo de pantalla*/
 body{
     display: grid ;
     grid-template-rows: [y1]20%[y2]720px[y3]10%;
+    background-image: url('/imagenes/clash.jpg');
+    background-size: cover;
+    color:antiquewhite
 }
 header{
-    background-color: aquamarine;
     grid-row-start: y1;
 }
 main{
     grid-row-start:y2;
-    background-color: blue;
 }
 footer{
-    color: antiquewhite;
     grid-row-start: y3;
-    background-color: black;
 }
 /*Cambio de color de fondo elegir estilos de letra y alinear los texto al centro*/
 main div{
@@ -66,6 +66,7 @@ main div{
 #diveq3 p{
     margin: 3%;
 }
+/*Ajuste de parrafo de bloque 3*/
 #diveq2 p{
     margin: 3%
 }
