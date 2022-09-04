@@ -1,17 +1,32 @@
-body{
-    display: grid ;
+body {
+    display: grid;
     grid-template-rows: [y1]20%[y2]720px[y3]10%;
+
 }
-header{
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+header {
     background-color: aquamarine;
     grid-row-start: y1;
+
 }
-main{
-    grid-row-start:y2;
+
+main {
+    grid-row-start: y2;
     background-color: blue;
 }
-footer{
+
+
+footer {
     color: antiquewhite;
     grid-row-start: y3;
+    text-align: center;
     background-color: black;
 }
