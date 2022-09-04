@@ -7,9 +7,21 @@ body {
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr 50px;
     text-align: center;
     text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.menu li a:hover {
+    background-color: black;
+}
+
+.menu li ul {
+    display: none;
 }
 
 header {
