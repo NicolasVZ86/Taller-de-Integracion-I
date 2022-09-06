@@ -1,19 +1,31 @@
-/*Gid y fondo de pantalla*/
+/*Grid del header , main y footer*/
+#contenedor-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1rem 1fr 1rem;
+    justify-content: center;
+
+    grid-template-areas: 
+    "header header header"
+    "formulario formulario formulario"
+    "footer footer footer";
+}
+
+.item1-header {
+    grid-area: header;
+}
+
+.item2-main {
+    grid-area: formulario;
+    justify-self: center;
+}
+
+.item3-footer {
+    grid-area: footer
+}
 body{
-    display: grid ;
-    grid-template-rows: [y1]20%[y2]720px[y3]10%;
-    background-image: url('/imagenes/clash.jpg');
-    background-size: cover;
-    color:antiquewhite;
-}
-header{
-    grid-row-start: y1;
-}
-main{
-    grid-row-start:y2;
-}
-footer{
-    grid-row-start: y3;
+    background-color: #0a141d;
+    color: aliceblue;
 }
 /*Cambio de color de fondo elegir estilos de letra y alinear los texto al centro*/
 main div{
@@ -65,9 +77,11 @@ main div{
 }
 /*Ajuste del parrafo del bloque 3*/
 #diveq3 p{
-    margin: 3%;
+    padding: 3%;
 }
 /*Ajuste de parrafo de bloque 3*/
 #diveq2 p{
-    margin: 3%
+    padding: 3%;
 }
+
+
