@@ -1,13 +1,13 @@
 #contenedor-formulario-registro {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
     justify-content: center;
-    
-    grid-template-areas: 
-    "header header header"
-    "formulario formulario ."
-    "footer footer footer";
+
+    grid-template-areas:
+        "header header header"
+        "formulario formulario ."
+        "footer footer footer";
 }
 
 .item1-header {
@@ -20,5 +20,6 @@
 }
 
 .item3-footer {
-    grid-area: footer
+    grid-area: footer;
+    
 }
