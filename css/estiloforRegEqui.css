@@ -1,0 +1,32 @@
+/*fondo de pantalla y cambio de color de letras*/
+body{
+    background-color: #0a141d;
+    color: aliceblue;
+}
+header{
+    height: 150px;
+}
+footer{
+    height: 100px;
+}
+main{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+}
+input{
+    margin: 20px;
+}
+#inputenvi{
+    height: 50px;
+    width: 200px;
+}
+span{
+    margin-right: 40px;
+    font-size: 20px;
+}
+#pais,#cp{
+    height: 60px ;
+    width: 300px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/estiloforRegEqui.css"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de registro de equipo</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>       
+        <h1>Registro de equipos</h1>
+        <form action="">
+            <label for="nombre">
+                <span>¿Nombre del equipo?</span>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+            </label>
+            <br>
+            <label for="correo">
+                <span>¿Correo del equipo?</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" required>
+            </label>
+            <br>
+            <label for="pais">
+                <span>¿Descripcion?</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" required minlength="10" maxlength="20">
+            </label>
+            <br>
+            <label for="cp">
+                <span>Lema del equipo : </span>
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" required >
+            </label>
+            <br>
+            <span>¿Juego / deporte en que participara el equipo?</span>
+            <input list="juegos" required 
+            placeholder="Elija 1 juego / deporte">
+            <datalist id="juegos">
+                <option value="League of Legends"></option>
+                <option value="Counter-Strike"></option>
+                <option value="futbol"></option>
+                <option value="basketball"></option>}
+            </datalist>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input type="submit" id="inputenvi">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
