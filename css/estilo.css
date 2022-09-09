@@ -1,5 +1,5 @@
 * {
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -7,15 +7,16 @@ body {
     background: url(F.png);
     background-size: cover;
     color: white;
+
+
 }
 
 .container {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr 1fr 50px;
-
     gap: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -28,6 +29,7 @@ body {
     grid-row-end: 1;
     grid-column-start: 1;
     grid-column-end: 1;
+
 }
 
 #tab2 {
@@ -42,8 +44,6 @@ body {
     grid-row-end: 1;
     grid-column-start: 3;
     grid-column-end: 3;
-
-
 }
 
 #tab4 {
@@ -53,7 +53,40 @@ body {
     grid-column-end: 4;
 }
 
+#tab5 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 5;
+    grid-column-end: 5;
+}
 
+.hola:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.hola ul {
+    display: none;
+}
+
+.hola:hover>ul {
+    display: block;
+    width: 75%;
+    height: 80%;
+}
+
+#titulohome {
+    height: 90%;
+    width: 530%;
+}
+
+#texthome {
+    height: 70%;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 6;
+
+}
 
 footer {
     position: absolute;
@@ -63,9 +96,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: rgb(255, 255, 255);
     text-align: center;
-
 }
 
 a {
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
