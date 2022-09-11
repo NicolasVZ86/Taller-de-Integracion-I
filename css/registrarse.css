@@ -89,7 +89,7 @@ body {
 }
 
 /*Para el formulario */
-.form-register {
+.formulario_registarse {
     width: 65%;
     background: #61010154;
     padding: 30px;
@@ -101,12 +101,12 @@ body {
     box-shadow: 7px 13px 37px #000;
 }
 
-.form-register h4 {
+.formulario_registarse h4 {
     font-size: 22px;
     margin-bottom: 20px;
 }
 
-.controls {
+.controles {
     width: 100%;
     background: #24303c;
     padding: 10px;
@@ -119,7 +119,7 @@ body {
 
 }
 
-.form-register p {
+.formulario_registarse p {
     height: 40px;
     text-align: center;
     font-size: 18px;
@@ -127,18 +127,18 @@ body {
 
 }
 
-.form-register a {
+.formulario_registarse a {
     color: white;
     text-decoration: none;
 
 }
 
-.form-register a:hover {
+.formulario_registarse a:hover {
     color: white;
     text-decoration: underline;
 }
 
-.form-register .button {
+.formulario_registarse .button {
     width: 100%;
     background: #0f3586;
     border: none;
