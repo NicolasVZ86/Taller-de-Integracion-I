@@ -56,6 +56,11 @@ article{
     color: rgb(124, 240, 255);
     text-align: center;
 }
+
+.sugest-h2 {
+    margin-bottom: 1rem;
+}
+
 .sugest_form {
     display: flex;
     flex-direction: column;
