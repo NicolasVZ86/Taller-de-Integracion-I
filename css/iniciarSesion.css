@@ -1,0 +1,15 @@
+#contenedor-inciarsesion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: 
+    "header header header"
+    "sesion sesion ."
+    "footer footer footer";
+}
+
+.item2-form {
+    grid-area: sesion;
+    justify-self: center;
+}
