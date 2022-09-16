@@ -1,6 +1,6 @@
 /*fondo de pantalla y cambio de color de letras*/
 body{
-    background-color: #0a141d;
+    background-color: #0c6ec4;
     color: aliceblue;
     display: grid;
     grid-template-columns: 300px 700px 300px ;
@@ -42,7 +42,9 @@ span{
     margin-right: 40px;
     font-size: 20px;
     text-align: center;
-    height: 40px;
+    height: 499px;
+    vertical-align: center;
+    width: 300px;
 }
 
 textarea{
@@ -56,6 +58,3 @@ textarea{
 .comentarios{
     margin: 10px;
 }
-
-
-
