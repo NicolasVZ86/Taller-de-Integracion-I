@@ -9,7 +9,6 @@
 }
 
 .input-text {
-    background-color: rgb(0, 255, 213);
     border-style: none;
     border-radius: 14px;
     background-color: rgb(0, 255, 213);
@@ -58,7 +57,7 @@ article{
 }
 
 .sugest-h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .sugest_form {
@@ -66,6 +65,10 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.text-area {
+    background-color: rgb(0, 255, 213);
 }
 
 .sugest_username {
