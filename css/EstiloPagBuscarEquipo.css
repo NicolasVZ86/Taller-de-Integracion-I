@@ -69,7 +69,7 @@ main{
 .BloqueDeEquipo>*{
     position:absolute;
 }
-.BloqueDeEquipo>textarea{
+.BloqueDeEquipo>p{
     top: 70%;
     height: 30% !important;
     width: 100% !important;
@@ -95,5 +95,8 @@ main{
     list-style: none;
     top: 53%;
     width: 100%;
-    
+}
+#busqueda{
+    border: none;
+    outline-offset: 1px;
 }
