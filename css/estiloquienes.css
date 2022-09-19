@@ -1,0 +1,89 @@
+/*Grid del header , main y footer*/
+#contenedor-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1rem 1fr 1rem;
+    justify-content: center;
+
+    grid-template-areas: 
+    "header header header"
+    "formulario formulario formulario"
+    "footer footer footer";
+}
+
+.item1-header {
+    grid-area: header;
+}
+
+.item2-main {
+    grid-area: formulario;
+    justify-self: center;
+}
+
+.item3-footer {
+    grid-area: footer
+}
+/*fondo de pantalla y cambio de color de letras*/
+body{
+    background-color: #0a141d;
+    color: aliceblue;
+}
+/*Cambio de color de fondo elegir estilos de letra y alinear los texto al centro*/
+main div{
+    background-color: rgba(0, 0, 0, 0.25);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/*Darle tamaño a los div 1 y 2 elegir su tamaño de letra y alinearlos con linea tambien definirles margenes*/
+#diveq1 , #diveq2{
+    height: 40%;
+    width: 40%;
+    font-size: 15px;
+    display:inline-table;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*Definir el estilo de la lista y darle pocicion de inicio a la lista tambien aumento de tamaño de letra*/
+#oleq{
+    list-style:disc ;
+    text-align: left;
+    font-size: 20px;
+}
+/*Definicon de tamaño del div 3 y margenes*/
+#diveq3{
+    height: 40%;
+    width: 80%;
+    margin-inline: 10%;
+}
+/*Ajuste de margen div 1*/
+#diveq1{
+    margin-left: 7%;
+    margin-right: 2%;
+}
+/*Ajuste de margen div 2*/
+#diveq2{
+    margin-right: 7%;
+    margin-left: 2%;
+}
+
+/*Colocamos en negritas los nombres de la lista*/
+#oleq li{
+    font-weight: bold;
+    margin: 2%;
+}
+/*Ajuste del titulo del bloque 3*/
+#diveq3 h1{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding: 3%;
+}
+/*Ajuste del parrafo del bloque 3*/
+#diveq3 p{
+    padding: 3%;
+}
+/*Ajuste de parrafo de bloque 3*/
+#diveq2 p{
+    padding: 3%;
+}
+
+
