@@ -1,0 +1,60 @@
+body {
+    background-image: url("../imagenes/fondo_ftorneo.jpg");
+}
+
+#contenedorGrid_creartorneo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: 
+    "header header header header"
+    ". ftorneo ftorneo ."
+    "footer footer footer footer";
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+.item1Grid_creartorneo {
+    grid-area: ftorneo;
+}
+
+#contenedorGrid_formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "fleft fright";
+
+    background-color:rgb(21, 53, 77, 0.25);
+    font-size: 16px;
+    width: 100%;
+    color: #eee;
+}
+
+fieldset {
+    border-color:rgb(77, 87, 69);
+}
+
+.item1Gridleft_formulario {
+    grid-area: fleft;
+}
+
+.item2Girdright_formulario {
+    grid-area: fright;
+}
+
+label > input {
+    padding: 10px;
+    background-color: #191e2e;
+    border-width: 2px;
+    border-color: #313c60;
+}
+
+label > select {
+    padding: 10px;
+    background-color: #191e2e;
+    border-width: 2px;
+    border-color: #313c60;
+}

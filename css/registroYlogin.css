@@ -1,0 +1,167 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("../imagenes/fondo-registro.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    color: azure;
+}
+
+
+#gridcontenedor_formularios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "fregistro_login fregistro_login msgAlternativo msgAlternativo"
+    "fregistro_login fregistro_login msgAlternativo msgAlternativo"
+    "footer footer footer footer";
+}
+/*MODO REIGSTRO-------------------------------------------------*/ 
+/*--El mennsaje alternativo de registro*/   
+.item1_mensajeAlternativa_iniciarSesion {
+    grid-area: msgAlternativo;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(52, 52, 52, 0.602);
+    padding: 15px;
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+}
+
+.boton_iniciarfSesion > button {
+    padding: 5px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0px;
+    transition: all .3 ease-in;
+    color: aliceblue;;
+}
+
+/*--Formulario registro*/
+#item2_contenedor_registro {
+    grid-area: fregistro_login;
+    align-self:center;
+    justify-self: center;
+    background-color: rgba(52, 52, 52, 0.602);
+    padding: 15px;
+    border-radius: 15px;
+    width: 60%;
+}
+
+fieldset {
+    border: 4px solid dodgerblue;
+
+}
+
+legend {
+    text-justify: center;
+    border: 2px solid rgb(27, 123, 219);
+    padding: 10px;
+    background-color: dodgerblue;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#fieldset_registro > input {
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.contenedorboton_CrearCuenta {
+    text-align: center;
+}
+
+.contenedorboton_CrearCuenta > button {
+    border-radius: 20px;
+    width: 50%;
+    padding-inline: 10px;
+    padding-block: 10px;
+    cursor: pointer;
+}
+
+/*MODO INICIO SESION-------------------------------------------------------*/ 
+/*Formulario iniciar sesion*/ 
+#item3_contenedor_iniciarSesion {
+    grid-area: fregistro_login;
+    align-self:center;
+    justify-self: center;
+    background-color: rgba(52, 52, 52, 0.602);
+    padding: 15px;
+    border-radius: 15px;
+    width: 60%;
+    visibility: hidden;
+}
+
+#fieldset_iniciarSesion {
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+#fieldset_iniciarSesion > input {
+    padding: 5px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.mensajeAlternativa_registro {
+    grid-area: msgAlternativo;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(52, 52, 52, 0.602);
+    padding: 15px;
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+    visibility: hidden;
+}
+
+.boton_iniciarfRegistro > button {
+    padding: 5px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0px;
+    color: aliceblue;;
+}
+
+#boton{
+    display: block;
+}
