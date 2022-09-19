@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/registro.css" />
+    <link rel="stylesheet" href="../css/crearTorneo.css" />
     <title>Registro</title>
 </head>
 
@@ -18,21 +18,63 @@
             <li>menu4</li>
         </ul>
     </header>
-    <article>
-        <section>
-            <form action="">
-                <label for="">Nombre del torneo</label>
-                <input type="text" name="" id="" placeholder="Nombre del torneo">
-                <label for="">Seleccione el juego/deporte</label>
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <input type="text" name="" id="" placeholder="Cantidad de llaves">
-            </form>
-        </section>
-    </article>
+    <main>
+        <article id="contenedorGrid_creartorneo">
+            <form action="" class="item1Grid_creartorneo">
+                <h1>Crea un torneo</h1>
+                <fieldset id="contenedorGrid_formulario">
+                    <!--Lado izquierdo-->
+                    <div class="item1Gridleft_formulario">
+                        <label for="nombreTorneo">
+                            Nombre del torneo <br><input type="text" name="nombreTorneo" id="" placeholder="Nombre del torneo">
+                        </label>
+                        <br>
+                        <label for="selectGame">
+                            Seleccione el juego/deporte <br>
+                            <select name="" id="selectGame">
+                                <option value="Rocket league">Rocket league</option>
+                                <option value="League of legends">League of legends</option>
+                                <option value="Valorant">Valorant</option>
+                                <option value="Counter Strike">Counter Strike</option>
+                            </select>
+                        </label>
+                        <br>
 
+                        <label for="cantidad_llaves">
+                            Cantidad de llaves <br><input type="number" name="cantidad_llaves" min="4"
+                                id="cantidad_llaves" placeholder="Cantidad de llaves">
+                        </label>
+                    </div>
+
+                    <!--Lado derecho-->
+                    <div class="item2Girdright_formulario">
+                        <label for="modoGame_Rocketleague">
+                            Seleccione modo de juego <br>
+                            <select name="" id="modoGame_Rocketleague">
+                                <option value="2v2">2vs2</option>
+                                <option value="3v3">3vs3</option>
+                            </select>
+                        </label>
+                        <br>
+
+                        <label for="modoGame_CounterStrike">
+                            Seleccione el modo de juego <br>
+                            <select name="" id="modoGame_CounterStrike">
+                                <option value="competitivo">Competitivo</option>
+                                <option value="companeros">Compañeros</option>
+                            </select>
+                        </label>
+
+                        <label for="dateTorneo">
+                            Fecha inicio <br><input type="date" name="" id="dateTorneo">
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="botonCreartorneo">
+                    <input type="button" id="boton" value="crear">
+                </div>
+            </form>
+        </article>
+
+    </main>
 </body>

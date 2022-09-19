@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro_login.css">
+    <title>Registro y login</title>
+</head>
+<body>
+    <main id="gridcontenedor_formularios">
+        <section class="item1_mensajeAlternativa_iniciarSesion">
+            <h1>Bienvenido a Torneos Gaming </h1>
+            <p>Si ya tienes una cuenta, por favor inicia sesion aquí</p>
+            <div class="boton_iniciarfSesion">
+                <button>Iniciar Sesion</button>
+            </div>
+        </section>
+        <article id="item2_contenedor_registro">
+            <form action="#" class="formulario_registro">
+                <fieldset id="fieldset_registro">
+                    <legend><b>Crea una cuenta</b></legend>
+                    <br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="ingrese su nombre"/>                
+                    <br />
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="ingrese su apellido"/>                    
+                    <br />
+                    <label for="frcorreo">Correo</label>
+                    <input type="email" id="frcorreo" placeholder="ingrese su correo" />
+                    <br />                
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" placeholder="ingrese su nombre de usuario"/>
+                    <br />                
+                    <label for="frcontrasena">Contraseña</label>
+                    <input type="password" id="frcontrasena" placeholder="ingrese una contraseña"/>
+                    <br />
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" placeholder="ingrese su fecha de nacimiento"/>
+                    <br />
+                    <br>
+                    <label for="carrera">Escribe tu Carrera</label>
+                    <input type="text" list="carrera" name="" id="carrera" placeholder="Ingrese su carrera">
+                    <datalist id="carrera">
+                        <option value="Ingeniería Civil Informática"></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </datalist>
+
+                    <input type="checkbox" id="terminos" />
+                    <label for="terminos">Aceptar terminos y condiciones</label>
+                    <input type="checkbox" id="informacion" />
+                    <label for="informacion">Desea recibir informacion</label>
+                    <br>
+                    <br>
+                    <div class="contenedorboton_CrearCuenta">
+                       <button type="submit">Crear cuenta</button>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+        <!--Inicio de Sesion-->
+        <article id="item3_contenedor_iniciarSesion">
+            <form action="#" class="formulario_iniciarSesion">
+                <h1>Inciar Sesion</h1>
+                <fieldset id="fieldset_iniciarSesion">
+                    <label for="ficorreo">Ingrese correo</label><br>
+                    <input type="email" name="" id="ficorreo" placeholder="user@example.com"><br>
+                    <label for="ficontrasena">Ingrese contraseña</label><br>
+                    <input type="password" name="" id="ficontrasena" placeholder="*************"><br>
+                    <div class="boton_submit">
+                        <input type="submit" value="Iniciar Sesion">
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+        <section class="mensajeAlternativa_registro">
+            <h1>Bienvenido de nuevo</h1>
+            <p>Si aún no tienes una cuenta, por favor registrate aquí</p>
+            <div class="boton_iniciarfRegistro">
+                <button>Registro</button>
+            </div>
+       </section>
+    </main>
+</body>
+<script src="scrpt.js"></script>
+</html>
