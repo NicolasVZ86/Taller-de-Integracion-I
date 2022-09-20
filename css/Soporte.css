@@ -20,15 +20,14 @@
 
 body {
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 header {
-    min-height: 10vh;
+    max-height: 10vh;
 }
 
 article{
-    /* background-image: url(/img/Space_Jam_1920x1080.jpg); */
     background-color: rgb(1, 0, 30);
     background-repeat: no-repeat;
     background-size: contain;
@@ -108,6 +107,7 @@ article{
     border: 0;
     margin-top: 1.5rem;
     font-weight: 700;
+    font-size: 15px;
 }
 
 footer {

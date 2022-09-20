@@ -21,6 +21,14 @@ body {
     "fregistro_login fregistro_login msgAlternativo msgAlternativo"
     "footer footer footer footer";
 }
+
+
+header {
+    grid-area: header;
+    height: 120px;
+}
+
+
 /*MODO REIGSTRO-------------------------------------------------*/ 
 /*--El mennsaje alternativo de registro*/   
 .item1_mensajeAlternativa_iniciarSesion {
@@ -162,6 +170,10 @@ legend {
     color: aliceblue;;
 }
 
-#boton{
+.pie-pagina {
+    grid-area: footer;
+}
+
+#boton {
     display: block;
 }
