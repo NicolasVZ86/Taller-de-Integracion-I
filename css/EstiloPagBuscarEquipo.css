@@ -103,7 +103,7 @@ main{
     left: 2px;
     margin: 1px;
 }
-li{
+.BloqueDeEquipo li{
     display: inline-block;
     background-color: rgba(0,0,0,0.5);
     margin: 1px;
