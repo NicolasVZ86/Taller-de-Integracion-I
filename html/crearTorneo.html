@@ -6,17 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/crearTorneo.css" />
-    <title>Registro</title>
+    <link rel="stylesheet" href="../css/estilo_footer.css">
+    <link rel="stylesheet" href="../css/style_footer.css">
+    <link rel="stylesheet" href="../css/estiloheader.css">
+    <title>Registro</title>    
 </head>
 
 <body id="contenedor-formulario-registro">
-    <header class="item1-header">
-        <ul>
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-            <li>menu4</li>
-        </ul>
+    <header>
+        <nav class="container">
+            <section id="tab1" class="hola">
+                <a href="Home.html">
+                    <h2>Inicio/Home</h2>
+                </a>
+            </section>
+            <section id="tab2" class="hola">
+                <a href="Soporte.html">
+                    <h2>Soporte</h2>
+                </a>
+            </section>
+            <section id="tab3" class="hola">
+                <h2> Registrarse</h2>
+                <ul>
+                    <li><a href="Login.html">
+                            Log in
+                        </a></li>
+                    <li><a href="Signin.html">
+                            Sign in
+                        </a></li>
+                </ul>
+                </a>
+            </section>
+
+            <section id="tab4" class="hola">
+                <a href="Equipos.html">
+                    <h2>Equipos</h2>
+                </a>
+            </section>
+            <section id="tab5" class="hola">
+                <a href="Somos.html">
+                    <h2>Quienes somos</h2>
+                </a>
+            </section>
+            <section id="tab6" class="hola">
+                <a href="Marcador.html">
+                    <h2>Marcador Global</h2>
+                </a>
+            </section>
+            <img src="gamer.webp" width="200%">
+        </nav>
     </header>
     <main>
         <article id="contenedorGrid_creartorneo">
@@ -64,17 +102,48 @@
                                 <option value="companeros">Compañeros</option>
                             </select>
                         </label>
-
+                        <br>
                         <label for="dateTorneo">
                             Fecha inicio <br><input type="date" name="" id="dateTorneo">
                         </label>
+                        
                     </div>
+                    
                 </fieldset>
                 <div class="botonCreartorneo">
                     <input type="button" id="boton" value="crear">
                 </div>
             </form>
         </article>
-
     </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="clash.jpg.jpg" alt="anashei">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>afasfassaf</p>
+                <p>asfasfads</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="icon icon-discord"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>wena los k</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </body>
