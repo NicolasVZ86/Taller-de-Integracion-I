@@ -5,51 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torneos</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_torneos.css">
 </head>
 <body>
     <header>
     </header>
     <main>
-        <div class="filtro">
-            <form method="post">
-                <input type="text" placeholder="Nombre..." name="xnombre">
-                <select name="xjuego" id="#">
-                    <option value="">Juego o deporte</option>
-                    <option value="">--</option>
-                </select>
-                <select name="xllaves" id="#">
-                    <option value="">Cantidad de llaves</option>
-                    <option value="">--</option>
-                </select>
-                <button name="buscar" type="submit">Buscar</button>
-            </form>
-        </div>
-        <div class="tourn">
-            <table class="table">
-                <tr>
-                    <th>Nombre Torneo</th>
-                    <th>Juego o deporte</th>
-                    <th>Cantidad de llaves</th>
-                </tr>
-                <!-- Cmabio en php -->
-                <tr>
-                    <td>nombre equipo1</td>
-                    <td>juego</td>
-                    <td>cant.llaves1</td>
-                </tr>
-                <tr>
-                    <td>nombre equipo1</td>
-                    <td>juego</td>
-                    <td>cant.llaves1</td>
-                </tr>
-                <tr>
-                    <td>nombre equipo1</td>
-                    <td>juego</td>
-                    <td>cant.llaves1</td>
-                </tr>
-            </table>
-        </div>
+        <section class="buscador">
+            <div class="filtro">
+                <form method="post">
+                    <input type="text" placeholder="Nombre..." class="xnombre">
+                    <select class="xjuego" id="#">
+                        <option value="">Juego o deporte</option>
+                        <option value="">--</option>
+                    </select>
+                    <select class="xllaves" id="#">
+                        <option value="">Cantidad de llaves</option>
+                        <option value="">--</option>
+                    </select>
+                    <button class="buscar" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="tourn">
+                <table class="table">
+                    <tr>
+                        <th>Nombre Torneo</th>
+                        <th>Juego o deporte</th>
+                        <th>Cantidad de llaves</th>
+                    </tr>
+                    <!-- Cmabio en php -->
+                    <tr>
+                        <td>nombre equipo1</td>
+                        <td>juego</td>
+                        <td>cant.llaves1</td>
+                    </tr>
+                    <tr>
+                        <td>nombre equipo1</td>
+                        <td>juego</td>
+                        <td>cant.llaves1</td>
+                    </tr>
+                    <tr>
+                        <td>nombre equipo1</td>
+                        <td>juego</td>
+                        <td>cant.llaves1</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
     </main>
     <footer>
     </footer>
