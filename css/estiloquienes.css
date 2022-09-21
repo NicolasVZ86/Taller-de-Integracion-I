@@ -1,12 +1,11 @@
 /* Dimeciones */
-.item1-header {
+header {
     height: 100px;
 }
-.item2-main {
+main {
     height:800px;
 }
-
-.item3-footer {
+footer {
     height: 200px;
 }
 /*fondo de pantalla y cambio de color de letras*/

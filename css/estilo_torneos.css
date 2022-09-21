@@ -4,7 +4,7 @@
 }
 
 
-body{
+/* body{
     display: grid ;
     grid-template-rows: [y1]20%[y2]720px[y3]10%;
 }
@@ -20,7 +20,7 @@ footer{
     color: antiquewhite;
     grid-row-start: y3;
     background-color: black;
-}
+} */
 .buscador{
     display: flex ;
     flex-wrap: wrap;

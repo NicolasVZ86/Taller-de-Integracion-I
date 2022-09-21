@@ -18,17 +18,17 @@
     outline: none;
 }
 
+header {
+    height: 10vh;
+}
+
 body {
     min-width: 100vw;
     min-height: 90vh;
-}
-
-header {
-    max-height: 10vh;
+    background-color: rgb(1, 0, 30);
 }
 
 article{
-    background-color: rgb(1, 0, 30);
     background-repeat: no-repeat;
     background-size: contain;
     display: grid;

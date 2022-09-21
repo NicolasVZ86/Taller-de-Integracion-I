@@ -47,7 +47,7 @@
   margin-right: 10px;
   background-color: #0d2033;
   text-align: center;
-  transition: all 300ms ease;
+  transition: all 300ms ease;/*sirve para que tarde un poco mas en hacerse el cambio y que no sea instantaneo*/
 }
 .pie-pagina .grupo-1 .red-social a:hover{
   color: aqua;
@@ -61,6 +61,8 @@
 .pie-pagina .grupo-2 small{
   font-size: 15px;
 }
+/*El Media Query sirve para modificar la pagina en funcion del dispositivo a utilizar
+para adaptar de mejor manera el ancho del viewport utilizando algunos parametros especificos*/
 @media screen and (max-width:800px){
   .pie-pagina .grupo-1{
       width: 90%;
