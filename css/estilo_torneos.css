@@ -2,6 +2,20 @@
     margin:0;
     padding:0;
 }
+body{
+    background-color: #031728;
+    color: rgb(255, 184, 0)
+}
+
+header{
+    height: 150px;
+}
+main{
+    height: auto;
+}
+footer{
+    height: 200px;
+}
 
 
 /* body{
@@ -16,7 +30,7 @@ main{
     grid-row-start:y2;
     background-color: blue;
 }
-footer{
+/* footer{
     color: antiquewhite;
     grid-row-start: y3;
     background-color: black;
