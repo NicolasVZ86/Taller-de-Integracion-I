@@ -1,7 +1,7 @@
 
 body{
-    color : greenyellow;
-    background-color: rgb(0, 0, 255);
+    color : rgb(227, 227, 226);
+    background-color: #031728;
 }
 header{
     height: 100px;
@@ -13,9 +13,10 @@ main{
 }
 
 #principio{
-    background-color: brown;
+    background-color: rgba(5, 29, 101, 0.386);
     height: 50px;
     display: block;
+    border-radius: 20px;
 }
 
 #principio > div {
@@ -49,10 +50,11 @@ main{
 
 #principal{
     display: block;
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.186);
     width: 100%;
     height: 80%;
     margin-top: 20px;
+    border-radius: 30px;
 }
 
 
@@ -60,7 +62,7 @@ main{
     display: inline-block;
     position: relative;
     width: 30%;
-    background-color: green;
+    background-color: rgba(10, 29, 158, 0.15);
     height: 40% ;
     margin: 2% 1.5%;
     box-shadow: 3px 3px 30px 5px black;
@@ -74,9 +76,9 @@ main{
     height: 30% !important;
     width: 100% !important;
     overflow: auto;
+    left: 2px;
     resize: none;
-    background-color: green; 
-    
+    background-color: rgba(0,0,0,0.3);
 }
 .BloqueDeEquipo>img{
     height: 50% ;
@@ -90,11 +92,21 @@ main{
     display: block;
     width: 45%;
     height: 30%;
+    -webkit-text-stroke: 1px black;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;    
 }
 .BloqueDeEquipo>ol{
     list-style: none;
     top: 53%;
     width: 100%;
+    left: 2px;
+    margin: 1px;
+}
+.BloqueDeEquipo li{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    margin: 1px;
 }
 #busqueda{
     border: none;

@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    display: grid ;
+    grid-template-rows: [y1]20%[y2]720px[y3]10%;
+}
+header{
+    background-color: aquamarine;
+    grid-row-start: y1;
+}
+main{
+    grid-row-start:y2;
+    background-color: blue;
+}
+footer{
+    color: antiquewhite;
+    grid-row-start: y3;
+    background-color: black;
+}
+.buscador{
+    display: flex ;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.filtro{
+    background:linear-gradient(#b3f, transparent);
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.filtro form{
+    font-size: 15px;
+    padding: 10px ;
+}
+.filtro form input{
+    background-color: gray;
+    color:white;
+    height: 50px;
+}
+.filtro form input::placeholder{
+    color:white;
+}
+.filtro form select{
+    background-color: gray;
+    color:white;
+    height: 55px;
+    border: 2px solid black;
+}
+.filtro form button{
+    background-color: gray;
+    color:white;
+    height: 55px;
+    width: 100px;
+    border-color:black;
+}
+.tourn{
+    display: flex;
+    justify-content: center;
+
+}
+.tourn .tabla{
+    margin: 20px;
+    text-align: left;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+.tourn th{
+    padding: 10px;
+    background-color: gray;
+    border: 4px solid white;
+}
+
+.tourn td{
+    padding: 10px;
+    border: 4px solid gray;
+}
+@media (max-width: 750px) {
+    .filtro {
+        width: 100%;
+    }
+    .filtro .xnombre,
+    .filtro .xjuego,
+    .filtro .xllaves,
+    .filtro .buscar{
+        width: 100px;
+    }
+    .tourn {
+        width: 95%;
+    }
+}
