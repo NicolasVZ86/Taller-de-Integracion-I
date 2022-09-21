@@ -75,3 +75,7 @@ main div{
 #oleq li:hover{
     color: red;
 }
+
+#diveq1>h1, #diveq2>h1{
+    margin: 5%;
+}
