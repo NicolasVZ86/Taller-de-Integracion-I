@@ -1,0 +1,104 @@
+body {
+    background-image: url("../imagenes/fondo_ftorneo.jpg");
+}
+
+header{
+    height: 100px;
+}
+main{
+    height: 700px;
+}
+footer{
+    height: 200px;
+}
+
+#contenedorGrid_creartorneo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 1vh;
+
+    grid-template-areas: 
+    "header header header header"
+    ". ftorneo ftorneo ."
+    ". ftorneo ftorneo ."
+    "footer footer footer footer";
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+.item1Grid_creartorneo {
+    grid-area: ftorneo;
+}
+
+#contenedorGrid_formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "fleft fright";
+
+    background-color:rgb(21, 53, 77, 0.25);
+    font-size: 16px;
+    width: 100%;
+    color: #eee;
+}
+
+h1 {
+    color: #eee;
+    font-size: 32px;
+    text-align: center;
+    -webkit-text-stroke: 1px aqua; 
+}
+
+fieldset {
+    border-color:rgb(77, 87, 69);
+}
+
+.item1Gridleft_formulario {
+    grid-area: fleft;
+}
+
+.item2Girdright_formulario {
+    grid-area: fright;
+}
+
+label > input {
+    padding: 10px;
+    background-color: #191e2e;
+    border-width: 2px;
+    border-color: #313c60;
+    color: aqua;
+}
+
+input::placeholder {
+    color: aqua;
+}
+
+label > select {
+    padding: 10px;
+    background-color: #191e2e;
+    border-width: 2px;
+    border-color: #313c60;
+    color:aqua
+}
+
+.pie-pagina {
+    grid-area: footer;
+}
+
+.botonCreartorneo {
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.botonCreartorneo input {
+    padding: 10px;
+    letter-spacing: 5px;
+    border-color: aqua;
+    background-color: rgb(21, 53, 77);
+    color: aqua;
+    cursor: pointer;
+}
+
