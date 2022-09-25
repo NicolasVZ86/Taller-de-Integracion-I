@@ -1,14 +1,11 @@
-/* * {
-    margin:0px;
-    padding:0px;
-} */
 
 #header {
+    position: relative;
     margin:auto;
-    width: 650px;
+    width: 100%;
+    background-color: rgba(4, 22, 83, 0.175);
+    height:30%;
     font-family:Arial, Helvetica, sans-serif;
-    float: right;
-    padding-top: 30px;
 }
 
 ul, ol {
@@ -17,7 +14,13 @@ ul, ol {
 
 .nav > li {
     float:left;
-
+}
+.nav{
+    margin: 0%;
+    position: relative;
+    float: right;
+    padding-right:10% ;
+    top: 10%;
 }
 
 .nav li a {
@@ -35,13 +38,42 @@ ul, ol {
 .nav li ul {
     display:none;
     position:absolute;
-    min-width:140px;
+
+}
+.nav li > ul{
+    display: block;
+    opacity: 0%;
+    visibility: hidden;
+    transition: 1s;
 }
 
+
 .nav li:hover > ul {
-    display:block;
+    visibility: visible;
+    opacity: 100%;
+    transition: 1s;
+
 }
 
 .nav li ul li {
     position:relative;
 }
+/* logo */
+#logo{
+    display: block;
+    height: 70%;
+    position: relative;
+    background-color: rgba(13, 13, 134, 0.583);
+}
+#logo img{
+    height: 100%;
+}
+#logo h1{
+    display: block;
+    float: right;
+    margin: 0%;
+    margin-right: 10%;
+    padding-top: 2%;
+    font-size:50px;
+}
+/* Swith */
