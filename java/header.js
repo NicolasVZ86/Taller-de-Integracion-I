@@ -1,9 +1,10 @@
-const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
-            function cambiaTema(ev){
-                if(ev.target.checked){
-                    document.documentElement.setAttribute('tema', 'light');
-                } else {
-                    document.documentElement.setAttribute('tema', 'dark');
-                }
-            }
-            colorSwitch.addEventListener('change', cambiaTema);
+function hola(){
+    let element = document.getElementById('link_1');
+    let elementStyle = window.getComputedStyle(element, 'hover');
+    let elementColor = elementStyle.getPropertyValue('background-color');
+    if(elementColor=="rgb(3, 23, 40)"){
+        document.body.style.backgroundColor(rgb(255,255,255))
+    }else{
+        document.body.style.backgroundColor(rgb(3, 23, 40))
+    }
+}

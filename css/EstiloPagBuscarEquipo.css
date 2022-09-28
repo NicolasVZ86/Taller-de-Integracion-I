@@ -4,7 +4,7 @@ body{
     background-color: #031728;
 }
 header{
-    height: 100px;
+    height: 150px;
 }
 main{
     height: 800px;
@@ -17,6 +17,7 @@ main{
     height: 50px;
     display: block;
     border-radius: 20px;
+    margin:5% 0% 2% 0%;
 }
 #principio > div {
     display: inline-block;
@@ -49,11 +50,9 @@ main{
 /* Bloque central conde se encuentran los bloques de cada equipo */
 #principal{
     display: block;
-    background-color: rgba(137, 43, 226, 0.186);
     width: 100%;
     height: 90%;
     margin-top: 20px;
-    border-radius: 30px;
 }
 
 /* Bloques de las targetas de los equipos */

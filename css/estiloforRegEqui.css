@@ -2,28 +2,19 @@
 body{
     background-color: #0a141d;
     color: aliceblue;
-    display: grid;
-    grid-template-columns: 300px 700px 300px ;
-    grid-template-rows: 100px 700px 100px;
-    justify-content: center;
-
-    grid-template-areas: 
-    "header header header"
-    "formulario formulario formulario"
-    "footer footer footer";
     text-align: center;
 }
 header{
     height: 150px;
-    grid-area: header;
+    width: 100%;
 }
 footer{
     height: 100px;
-    grid-area: footer;
+
 }
 main{
+    height: 700px;
     text-align: center;
-    grid-area: formulario;
 }
 /* Cambiamos los estilos de el h1,input,spany textarea */
 h1{
