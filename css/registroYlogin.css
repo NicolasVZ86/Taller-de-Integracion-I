@@ -6,6 +6,7 @@ body {
     background-image: url("../imagenes/fondo-registro.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
 
     color: azure;
 }
@@ -20,6 +21,8 @@ body {
     "fregistro_login fregistro_login msgAlternativo msgAlternativo"
     "fregistro_login fregistro_login msgAlternativo msgAlternativo"
     "footer footer footer footer";
+
+    visibility: hidden;
 }
 /*MODO REIGSTRO-------------------------------------------------*/ 
 /*--El mennsaje alternativo de registro*/   
@@ -34,7 +37,7 @@ body {
     text-align: center;
 }
 
-.boton_iniciarfSesion > button {
+.item1_mensajeAlternativa_iniciarSesion > button {
     padding: 5px;
     font-weight: bold;
     background-color: dodgerblue;
@@ -45,7 +48,7 @@ body {
     font-size: 16px;
     margin-top: 0px;
     transition: all .3 ease-in;
-    color: aliceblue;;
+    color: aliceblue;
 }
 
 /*--Formulario registro*/
@@ -61,7 +64,6 @@ body {
 
 fieldset {
     border: 4px solid dodgerblue;
-
 }
 
 legend {
@@ -108,7 +110,7 @@ legend {
     padding: 15px;
     border-radius: 15px;
     width: 60%;
-    visibility: hidden;
+    visibility: visible;
 }
 
 #fieldset_iniciarSesion {
@@ -146,10 +148,9 @@ legend {
     border-radius: 15px;
     width: 60%;
     text-align: center;
-    visibility: hidden;
 }
 
-.boton_iniciarfRegistro > button {
+.mensajeAlternativa_registro > button {
     padding: 5px;
     font-weight: bold;
     background-color: dodgerblue;
