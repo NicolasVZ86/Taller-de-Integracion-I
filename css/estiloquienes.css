@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Grid del header , main y footer*/
 #contenedor-body {
     display: grid;
@@ -22,6 +23,17 @@
 
 .item3-footer {
     grid-area: footer
+=======
+/* Dimeciones */
+header {
+    height: 100px;
+}
+main {
+    height:800px;
+}
+footer {
+    height: 200px;
+>>>>>>> benjaminespinoza
 }
 /*fondo de pantalla y cambio de color de letras*/
 body{
@@ -45,8 +57,13 @@ main div{
 }
 /*Definir el estilo de la lista y darle pocicion de inicio a la lista tambien aumento de tamaño de letra*/
 #oleq{
+<<<<<<< HEAD
     list-style:disc ;
     text-align: left;
+=======
+    list-style:none ;
+    text-align: center;
+>>>>>>> benjaminespinoza
     font-size: 20px;
 }
 /*Definicon de tamaño del div 3 y margenes*/
@@ -66,6 +83,10 @@ main div{
     margin-left: 2%;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> benjaminespinoza
 /*Colocamos en negritas los nombres de la lista*/
 #oleq li{
     font-weight: bold;
@@ -86,4 +107,14 @@ main div{
     padding: 3%;
 }
 
+<<<<<<< HEAD
 
+=======
+#oleq li:hover{
+    color: red;
+}
+
+#diveq1>h1, #diveq2>h1{
+    margin: 5%;
+}
+>>>>>>> benjaminespinoza

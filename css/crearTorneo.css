@@ -2,14 +2,35 @@ body {
     background-image: url("../imagenes/fondo_ftorneo.jpg");
 }
 
+<<<<<<< HEAD
 #contenedorGrid_creartorneo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, auto);
+=======
+header{
+    height: 100px;
+}
+main{
+    height: 700px;
+}
+footer{
+    height: 200px;
+}
+
+#contenedorGrid_creartorneo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 1vh;
+>>>>>>> benjaminespinoza
 
     grid-template-areas: 
     "header header header header"
     ". ftorneo ftorneo ."
+<<<<<<< HEAD
+=======
+    ". ftorneo ftorneo ."
+>>>>>>> benjaminespinoza
     "footer footer footer footer";
 
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
@@ -33,6 +54,16 @@ body {
     color: #eee;
 }
 
+<<<<<<< HEAD
+=======
+h1 {
+    color: #eee;
+    font-size: 32px;
+    text-align: center;
+    -webkit-text-stroke: 1px aqua; 
+}
+
+>>>>>>> benjaminespinoza
 fieldset {
     border-color:rgb(77, 87, 69);
 }
@@ -50,6 +81,14 @@ label > input {
     background-color: #191e2e;
     border-width: 2px;
     border-color: #313c60;
+<<<<<<< HEAD
+=======
+    color: aqua;
+}
+
+input::placeholder {
+    color: aqua;
+>>>>>>> benjaminespinoza
 }
 
 label > select {
@@ -57,4 +96,29 @@ label > select {
     background-color: #191e2e;
     border-width: 2px;
     border-color: #313c60;
+<<<<<<< HEAD
 }
+=======
+    color:aqua
+}
+
+.pie-pagina {
+    grid-area: footer;
+}
+
+.botonCreartorneo {
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.botonCreartorneo input {
+    padding: 10px;
+    letter-spacing: 5px;
+    border-color: aqua;
+    background-color: rgb(21, 53, 77);
+    color: aqua;
+    cursor: pointer;
+}
+
+>>>>>>> benjaminespinoza

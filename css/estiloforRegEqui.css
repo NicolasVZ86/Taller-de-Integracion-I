@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*fondo de pantalla y cambio de color de letras*/
+=======
+/*fondo de pantalla y cambio de color de letras con estilo de grid a la pagina */
+>>>>>>> benjaminespinoza
 body{
     background-color: #0a141d;
     color: aliceblue;
@@ -24,8 +28,13 @@ footer{
 main{
     text-align: center;
     grid-area: formulario;
+<<<<<<< HEAD
     
 }
+=======
+}
+/* Cambiamos los estilos de el h1,input,spany textarea */
+>>>>>>> benjaminespinoza
 h1{
     font-size: 40px;
 }
@@ -34,10 +43,13 @@ input{
     height: 20px;
     width: 200px;
 }
+<<<<<<< HEAD
 #inputenvi{
     height: 50px;
     width: 200px;
 }
+=======
+>>>>>>> benjaminespinoza
 span{
     margin-right: 40px;
     font-size: 20px;
@@ -47,13 +59,32 @@ span{
 }
 
 textarea{
+<<<<<<< HEAD
     height: 18px !important;
+=======
+    display: inline-block;
+    height: 30px !important;
+>>>>>>> benjaminespinoza
     border: none;
     overflow: auto;
     padding: 8px 9px;
     resize: none;
     width: 300px ;
 }
+<<<<<<< HEAD
+=======
+select{
+    margin:10px;
+    height: 20px;
+    width: 200px;
+}
+/* Dimenciones del botn que nvia los datos */
+#inputenvi{
+    height: 50px;
+    width: 200px;
+}
+/* Margen de el div de los textarea */
+>>>>>>> benjaminespinoza
 .comentarios{
     margin: 10px;
 }

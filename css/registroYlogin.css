@@ -21,6 +21,17 @@ body {
     "fregistro_login fregistro_login msgAlternativo msgAlternativo"
     "footer footer footer footer";
 }
+<<<<<<< HEAD
+=======
+
+
+header {
+    grid-area: header;
+    height: 120px;
+}
+
+
+>>>>>>> benjaminespinoza
 /*MODO REIGSTRO-------------------------------------------------*/ 
 /*--El mennsaje alternativo de registro*/   
 .item1_mensajeAlternativa_iniciarSesion {
@@ -162,6 +173,14 @@ legend {
     color: aliceblue;;
 }
 
+<<<<<<< HEAD
 #boton{
+=======
+.pie-pagina {
+    grid-area: footer;
+}
+
+#boton {
+>>>>>>> benjaminespinoza
     display: block;
 }
