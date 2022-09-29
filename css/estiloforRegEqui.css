@@ -1,7 +1,7 @@
 /*fondo de pantalla y cambio de color de letras con estilo de grid a la pagina */
 body{
     background-color: #0a141d;
-    color: aliceblue;
+    color: rgb(255, 184, 0);
     text-align: center;
 }
 header{
