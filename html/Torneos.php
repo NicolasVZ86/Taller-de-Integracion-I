@@ -1,3 +1,43 @@
+<?php
+    $servername = "localhost";
+    $database = "Torneos";
+    $username = "root";
+    $password = "";
+    $conn = new mysqli($servername, $username, $password, $database);
+    if ($conn -> connect_errno)
+    {
+        die("Fallo la conexion:(".$conn -> mysqli_connect_errno().")".$conn-> mysqli_connect_error());
+    }
+    $where="";
+    $nombre=$_POST['xName'];
+    $juego=$_POST['xGames'];
+    $llaves=$_POST['xKeys'];
+
+    if (isset($_POST['xBuscar']))
+    {
+	    if (empty($_POST['xGames']))
+	    {
+		    $where="where N_torneo like '".$nombre."%'";
+	    }
+
+	    else if (empty($_POST['xName']))
+	    {
+		    $where="where N_jue_dep='".$juego."'";
+	    }
+
+	    else
+	    {
+		    $where="where N_torneo like '".$nombre."%' and N_jue_dep='".$juego."'";
+	    }
+    }
+    // $torneos="SELECT * FROM Torneos";
+    // $resJuegos=$conn->query($torneos);
+    // $resllaves=$conn->query($torneos);
+    // if(mysqli_num_rows($resJuegos)==0)
+    // {
+	//     $mensaje="<h1>No hay registros que coincidan con su criterio de búsqueda.</h1>";
+    // }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +50,8 @@
     <link rel="stylesheet" href="../css/estilo_torneos.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
-<<<<<<< HEAD
 <body>
     <header>
-=======
-<body class="link_1">
-    <header>
-        <div id="logo">
-            <img src="../imagenes/gamer.webp" alt="no ta">
-            <button id="modoos" onclick="hola()">Modo Claro</button>
-            <h1>Torneos UCT</h1>
-        </div>
->>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
         <div id="header">
 			<ul class="nav">
 				<li><a href="../html/Home.html">Inicio</a></li>
@@ -51,41 +81,52 @@
         <section class="buscador">
             <div class="filtro">
                 <form method="post">
-                    <input type="text" placeholder="Nombre..." class="xnombre">
-                    <select class="xjuego" id="#">
+                    <input type="text" placeholder="Nombre..." class="xnombre" name='xName'>
+                    <select class="xjuego" name='xGames'>
                         <option value="">Juego o deporte</option>
-                        <option value="">--</option>
+                        <?
+						while ($resJuegos = $resCarreras->fetch_array(MYSQLI_BOTH))
+						{
+							echo '<option value=""'.$resJuegos['N_jue_dep'].'">'.$resJuegos['N_jue_dep'].'</option>';
+                        }
+                        ?>
                     </select>
-                    <select class="xllaves" id="#">
-                        <option value="">Cantidad de llaves</option>
-                        <option value="">--</option>
+                    <select class="xllaves" name='xKeys'>
+                    <option value="">Llaves</option>
+					<?
+						while ($resllaves = $resCarreras->fetch_array(MYSQLI_BOTH))
+						{
+							echo '<option value="'.$resllaves['Cant_llaves'].'">'.$resllaves['Cant_llaves'].'</option>';
+						}
+					?>
                     </select>
-                    <button class="buscar" type="submit">Buscar</button>
+                    <button class="buscar" name='xBuscar' type="submit">Buscar</button>
                 </form>
             </div>
             <div class="tourn">
                 <table class="tabla">
                     <tr>
+                        <th>Id Torneo</th>
                         <th>Nombre Torneo</th>
                         <th>Juego o deporte</th>
                         <th>Cantidad de llaves</th>
                     </tr>
                     <!-- Cmabio en php -->
+                    <?php
+                    $sql="SELECT * from torneo";
+                    $result=mysqli_query($conn,$sql);
+
+                    while($mostrar=mysqli_fetch_array($result)){
+                        ?>
                     <tr>
-                        <td>nombre equipo1</td>
-                        <td>juego</td>
-                        <td>cant.llaves1</td>
+                        <td><?php echo $mostrar['Id_Torneo']?></td>
+                        <td><?php echo $mostrar['N_torneo']?></td>
+                        <td><?php echo $mostrar['N_jue_dep']?></td>
+                        <td><?php echo $mostrar['Cant_llaves']?></td>
                     </tr>
-                    <tr>
-                        <td>nombre equipo1</td>
-                        <td>juego</td>
-                        <td>cant.llaves1</td>
-                    </tr>
-                    <tr>
-                        <td>nombre equipo1</td>
-                        <td>juego</td>
-                        <td>cant.llaves1</td>
-                    </tr>
+                <?php
+                }
+                ?>
                 </table>
             </div>
         </section>
@@ -115,8 +156,4 @@
         </div>
     </footer>
 </body>
-<<<<<<< HEAD
-=======
-<script src="../java/header.js"></script>
->>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 </html>
