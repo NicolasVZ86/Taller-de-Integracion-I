@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*Grid del header , main y footer*/
 #contenedor-body {
     display: grid;
@@ -10,11 +11,16 @@
     "header header header"
     "formulario formulario formulario"
     "footer footer footer";
+=======
+/* Dimeciones */
+header {
+    height: 150px;
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 }
-
-.item1-header {
-    grid-area: header;
+main {
+    height:800px;
 }
+<<<<<<< HEAD
 
 .item2-main {
     grid-area: formulario;
@@ -34,11 +40,15 @@ main {
 footer {
     height: 200px;
 >>>>>>> benjaminespinoza
+=======
+footer {
+    height: 200px;
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 }
 /*fondo de pantalla y cambio de color de letras*/
 body{
     background-color: #0a141d;
-    color: aliceblue;
+    color: rgb(255, 184, 0)
 }
 /*Cambio de color de fondo elegir estilos de letra y alinear los texto al centro*/
 main div{
@@ -58,12 +68,17 @@ main div{
 /*Definir el estilo de la lista y darle pocicion de inicio a la lista tambien aumento de tamaño de letra*/
 #oleq{
 <<<<<<< HEAD
+<<<<<<< HEAD
     list-style:disc ;
     text-align: left;
 =======
     list-style:none ;
     text-align: center;
 >>>>>>> benjaminespinoza
+=======
+    list-style:none ;
+    text-align: center;
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
     font-size: 20px;
 }
 /*Definicon de tamaño del div 3 y margenes*/
@@ -84,9 +99,13 @@ main div{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> benjaminespinoza
+=======
+
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 /*Colocamos en negritas los nombres de la lista*/
 #oleq li{
     font-weight: bold;
@@ -108,6 +127,7 @@ main div{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 #oleq li:hover{
@@ -118,3 +138,12 @@ main div{
     margin: 5%;
 }
 >>>>>>> benjaminespinoza
+=======
+#oleq li:hover{
+    color: red;
+}
+
+#diveq1>h1, #diveq2>h1{
+    margin: 5%;
+}
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608

@@ -19,16 +19,25 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
     min-width: 100vw;
     min-height: 100vh;
+=======
+header {
+    height: 150px;;
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 }
 
-header {
-    min-height: 10vh;
+body {
+    min-width: 100vw;
+    min-height: 90vh;
+    background-color: rgb(1, 0, 30);
+    color: rgb(255, 184, 0);
 }
 
 article{
+<<<<<<< HEAD
     /* background-image: url(/img/Space_Jam_1920x1080.jpg); */
     background-color: rgb(1, 0, 30);
 =======
@@ -44,6 +53,8 @@ body {
 
 article{
 >>>>>>> benjaminespinoza
+=======
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
     background-repeat: no-repeat;
     background-size: contain;
     display: grid;
@@ -123,9 +134,13 @@ article{
     margin-top: 1.5rem;
     font-weight: 700;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     font-size: 15px;
 >>>>>>> benjaminespinoza
+=======
+    font-size: 15px;
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 }
 
 footer {

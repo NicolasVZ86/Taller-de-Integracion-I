@@ -1,32 +1,29 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*fondo de pantalla y cambio de color de letras*/
 =======
 /*fondo de pantalla y cambio de color de letras con estilo de grid a la pagina */
 >>>>>>> benjaminespinoza
+=======
+/*fondo de pantalla y cambio de color de letras con estilo de grid a la pagina */
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 body{
     background-color: #0a141d;
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: 300px 700px 300px ;
-    grid-template-rows: 100px 700px 100px;
-    justify-content: center;
-
-    grid-template-areas: 
-    "header header header"
-    "formulario formulario formulario"
-    "footer footer footer";
+    color: rgb(255, 184, 0);
     text-align: center;
 }
 header{
     height: 150px;
-    grid-area: header;
+    width: 100%;
 }
 footer{
     height: 100px;
-    grid-area: footer;
+
 }
 main{
+    height: 700px;
     text-align: center;
+<<<<<<< HEAD
     grid-area: formulario;
 <<<<<<< HEAD
     
@@ -35,6 +32,10 @@ main{
 }
 /* Cambiamos los estilos de el h1,input,spany textarea */
 >>>>>>> benjaminespinoza
+=======
+}
+/* Cambiamos los estilos de el h1,input,spany textarea */
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 h1{
     font-size: 40px;
 }
@@ -44,12 +45,15 @@ input{
     width: 200px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 #inputenvi{
     height: 50px;
     width: 200px;
 }
 =======
 >>>>>>> benjaminespinoza
+=======
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 span{
     margin-right: 40px;
     font-size: 20px;
@@ -60,11 +64,16 @@ span{
 
 textarea{
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 18px !important;
 =======
     display: inline-block;
     height: 30px !important;
 >>>>>>> benjaminespinoza
+=======
+    display: inline-block;
+    height: 30px !important;
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
     border: none;
     overflow: auto;
     padding: 8px 9px;
@@ -72,7 +81,10 @@ textarea{
     width: 300px ;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 select{
     margin:10px;
     height: 20px;
@@ -84,7 +96,10 @@ select{
     width: 200px;
 }
 /* Margen de el div de los textarea */
+<<<<<<< HEAD
 >>>>>>> benjaminespinoza
+=======
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 .comentarios{
     margin: 10px;
 }

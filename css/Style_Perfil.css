@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin:0;
     padding:0;
@@ -154,4 +155,162 @@ footer{
     margin-right: 1rem;
     font-size: 1.2rem;
     vertical-align: middle;
+=======
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #031728;
+    color: rgb(255, 184, 0)
+}
+
+header{
+    height: 150px;
+}
+main{
+    height: auto;
+}
+footer{
+    height: 200px;
+}
+
+/* body{
+    display: grid ;
+    grid-template-rows: [y1]20%[y2]720px[y3]10%;
+}
+header{
+    background-color: aquamarine;
+    grid-row-start: y1;
+}
+main{
+    grid-row-start:y2;
+    background-color: blue;
+}
+footer{
+    color: antiquewhite;
+    grid-row-start: y3;
+    background-color: black;
+} */
+
+.perfil_section .usuario_cuerpo,
+.perfil_section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.perfil_section .perfil_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#bc3cff, transparent);
+    margin-bottom: 1.25rem;
+}
+
+.perfil_section .perfil_portada{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 17rem;
+    background: linear-gradient(45deg,#bc3cff,#317fff);
+    border-radius: 0 0 20px 20px;
+}
+
+.perfil_section .perfil_portada .boton_portada {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    cursor:pointer;
+}
+.perfil_section .perfil_portada .boton_portada i{
+ margin-right: 1rem;
+}
+
+.perfil_section .perfil_avatar{
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border:7px solid #ffffff;
+    background-color: #DFEF;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0,.2);
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 90px);
+    z-index: 1;
+}
+
+.perfil_section .perfil_avatar img{
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.perfil_section .perfil_avatar .boton_avatar {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.perfil_section .usuario_cuerpo{
+    width: 70%;
+    position: relative;
+    max-width: 750px;
+}
+
+.perfil_section .usuario_pie,
+.perfil_section .descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0,.2);
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+}
+.perfil_section .descripcion{
+    margin-bottom: 1.25rem;
+}
+
+.perfil_section .descripcion h3{
+    display: block;
+    width: 100%;
+    font-size: 1.75em;
+    margin-bottom: 0.5rem;
+}
+
+.perfil_section .descripcion p{
+    color:#848484;
+    text-align: center;
+}
+.perfil_section .datos{
+    width: 50%;
+    list-style: none;
+}
+
+.perfil_section .datos li{
+    padding: 5px 0;
+}
+
+.seccion-perfil-usuario .lista-datos li>.icono {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 }
