@@ -89,31 +89,3 @@ footer{
     grid-area: info3;
 }
 
-.botonBienvenida {
-    padding: 10px;
-    border-radius: 20px;
-    width: 350px;
-    background-color: aqua;
-    text-decoration: none;
-    margin-top: 5%;
-    margin-bottom: 2rem;
-}
-
-#hola {
-    display: block;
-    text-align: center;
-}
-
-#hola div a{
-    display: inline-block;
-    align-items: center;
-    width: 51%;    
-}
-#modoos{
-    height: 20%;
-    width: 10%;
-    position: relative;
-    left: 20%;
-    bottom: 40%;
-    border-radius: 20px;
-}
