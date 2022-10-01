@@ -52,6 +52,14 @@
 </head>
 <body>
     <header>
+<<<<<<< HEAD:html/Torneos.php
+=======
+        <div id="logo">
+            <img src="../imagenes/gamer.webp" alt="no ta">
+            <h1>Torneos UCT</h1>
+
+        </div>
+>>>>>>> parent of 270c970 (ultimo edit del header):html/Torneos.html
         <div id="header">
 			<ul class="nav">
 				<li><a href="../html/Home.html">Inicio</a></li>

@@ -25,8 +25,12 @@ body {
     min-height: 100vh;
 =======
 header {
+<<<<<<< HEAD
     height: 150px;;
 >>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
+=======
+    height: 10vh;
+>>>>>>> parent of 270c970 (ultimo edit del header)
 }
 
 body {

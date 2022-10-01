@@ -31,6 +31,7 @@ body {
 header {
     grid-area: header;
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 120px;
 }
 
@@ -38,6 +39,9 @@ header {
 >>>>>>> benjaminespinoza
 =======
     height: 150px;
+=======
+    height: 120px;
+>>>>>>> parent of 270c970 (ultimo edit del header)
 }
 
 

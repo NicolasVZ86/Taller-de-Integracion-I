@@ -17,7 +17,6 @@
 
 ul, ol {
     list-style:none;
-    z-index: 100000;
 }
 
 .nav > li {
@@ -86,6 +85,7 @@ ul, ol {
     font-size:50px;
 }
 /* Swith */
+<<<<<<< HEAD
 #hola {
     display: block;
     text-align: center;
@@ -174,3 +174,5 @@ ol {
 =======
 >>>>>>> parent of 33347db (actual)
 }
+=======
+>>>>>>> parent of 270c970 (ultimo edit del header)
