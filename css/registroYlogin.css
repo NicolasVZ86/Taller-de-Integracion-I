@@ -24,6 +24,31 @@ body {
 
     visibility: hidden;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
+
+
+header {
+    grid-area: header;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    height: 120px;
+}
+
+
+>>>>>>> benjaminespinoza
+=======
+    height: 150px;
+=======
+    height: 120px;
+>>>>>>> parent of 270c970 (ultimo edit del header)
+}
+
+
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
 /*MODO REIGSTRO-------------------------------------------------*/ 
 /*--El mennsaje alternativo de registro*/   
 .item1_mensajeAlternativa_iniciarSesion {
@@ -163,6 +188,20 @@ legend {
     color: aliceblue;;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 #boton{
+=======
+=======
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
+.pie-pagina {
+    grid-area: footer;
+}
+
+#boton {
+<<<<<<< HEAD
+>>>>>>> benjaminespinoza
+=======
+>>>>>>> 33347dbf68b74f20bed18dedf1a22d646d0c7608
     display: block;
 }
