@@ -1,24 +1,25 @@
-
+/* Definicion de bloques de la pagina  */
 body{
     color : rgb(227, 227, 226);
     background-color: #031728;
+    color: rgb(255, 184, 0);
 }
 header{
-    height: 100px;
+    height: 150px;
 }
 main{
     height: 800px;
     width: 80%;
     margin-inline: 10%;
 }
-
+/* barra para buscar equipos por nombre o por juego */
 #principio{
     background-color: rgba(5, 29, 101, 0.386);
     height: 50px;
     display: block;
     border-radius: 20px;
+    margin:5% 0% 2% 0%;
 }
-
 #principio > div {
     display: inline-block;
     padding-inline: center;
@@ -47,17 +48,15 @@ main{
     margin-inline: 20%;
     text-align: center;
 }
-
+/* Bloque central conde se encuentran los bloques de cada equipo */
 #principal{
     display: block;
-    background-color: rgba(137, 43, 226, 0.186);
     width: 100%;
     height: 90%;
     margin-top: 20px;
-    border-radius: 30px;
 }
 
-
+/* Bloques de las targetas de los equipos */
 .BloqueDeEquipo{
     display: inline-block;
     position: relative;
@@ -71,6 +70,7 @@ main{
 .BloqueDeEquipo>*{
     position:absolute;
 }
+/* Ajustes de cada elemnto de los bloques de los equipos como pocicions y detalles */
 .BloqueDeEquipo>p{
     top: 70%;
     height: 30% !important;
@@ -110,6 +110,7 @@ main{
     background-color: rgba(0,0,0,0.5);
     margin: 1px;
 }
+/* Ajuste del imput de la bara de busqueda por filtro de nombre de equipo */
 #busqueda{
     border: none;
     outline-offset: 1px;
