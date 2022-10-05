@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" href="../css/estiloheader.css">
     <link rel="stylesheet" href="../css/style_footer.css">
     <link rel="stylesheet" href="../css/Style_Perfil.css">
     <link rel="stylesheet" href="../css/estiloheader.css">
@@ -72,7 +71,7 @@
                 <h2>Historial</h2>
                 <div id="historial">
                     <?php
-                    include("/php/datosperfil.php")
+                    include("../php/datosperfil.php")
                     ?>
                 </div>
             </div>
