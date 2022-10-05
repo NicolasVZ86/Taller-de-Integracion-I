@@ -71,7 +71,7 @@
                 <h2>Historial</h2>
                 <div id="historial">
                     <?php
-                    include("../php/datosperfil.php")
+                    include_once("../php/datosperfil.php")
                     ?>
                 </div>
             </div>
