@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estiloheader.css">
+    <title>Perfil</title>
     <link rel="stylesheet" href="../css/style_footer.css">
-    <script src="/java/funciones.js"></script>
-    <title>Pagina torneos</title>
-    <link rel="shortcut icon" href="logo.webp">
+    <link rel="stylesheet" href="../css/Style_Perfil.css">
+    <link rel="stylesheet" href="../css/estiloheader.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
-
 <body class="link_1">
     <header>
         <div id="logo">
@@ -36,7 +33,7 @@
 					</ul>
 				</li>
 				<li><a href="../html/Soporte.html">Soporte</a></li>
-                <li><a href="../html/Perfil.html">Perfil</a>
+                <li><a href="../html/Perfil.php">Perfil</a>
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
                     </ul>
@@ -45,7 +42,42 @@
 			</ul>
 		</div>
     </header>
-    <footer>
+    <main>
+        <section class="perfil_section">
+            <div class="perfil_header">
+                <div class="perfil_portada">
+                    <div class="perfil_avatar">
+                        <img src="../images/Sin título.png" alt="avatar">
+                        <button type="button" class="boton_avatar">
+                            <i class="far fa-image"></i>
+                            cambiar imagen
+                        </button>
+                    </div>
+                    <button type="button" class="boton_portada">
+                        <i class="far fa-image"></i> Cambiar fondo
+                    </button>
+                </div>
+                
+            </div>
+            <div class="usuario_cuerpo">
+                <div class="descripcion">
+                    <h3>Nombre usuario</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                
+            </div>
+            <!-- Todos los datos se cambiaran por un form en php -->
+            <div class="usuario_pie">
+                <h2>Historial</h2>
+                <div id="historial">
+                    <?php
+                    include("../php/datosperfil.php")
+                    ?>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
@@ -56,8 +88,8 @@
             </div>
             <div class="box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>holas</p>
-                <p>yo habia ponido mi sobrenosotros aqui</p>
+                <p></p>
+                <p></p>
             </div>
             <div class="box">
                 <h2>SIGUENOS</h2>

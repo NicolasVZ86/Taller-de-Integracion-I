@@ -1,43 +1,50 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+
 /*:::::Pie de Pagina*/
-.pie-pagina{
+.pie-pagina {
   width: 100%;
-  background-color: rgba(10, 20, 29,0.5);
+  background-color: #0a141d;
 }
-.pie-pagina .grupo-1{
+
+.pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:50px;
+  grid-gap: 50px;
   padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
+
+.pie-pagina .grupo-1 .box figure img {
   width: 250px;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -45,37 +52,42 @@
   line-height: 45px;
   color: #fff;
   margin-right: 10px;
-  background-color: rgba(14, 33, 53,0.5);
+  background-color: #0d2033;
   text-align: center;
-  transition: all 300ms ease;/*sirve para que tarde un poco mas en hacerse el cambio y que no sea */
+  transition: all 300ms ease;
+  /*sirve para que tarde un poco mas en hacerse el cambio y que no sea */
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+.pie-pagina .grupo-1 .red-social a:hover {
   color: aqua;
 }
-.pie-pagina .grupo-2{
-  background-color: rgba(10, 26, 42,0.5);
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
-.pie-pagina .grupo-2 small{
+
+.pie-pagina .grupo-2 small {
   font-size: 15px;
 }
+
 /*El Media Query sirve para modificar la pagina en funcion del dispositivo a utilizar
 para adaptar de mejor manera el ancho del viewport utilizando algunos parametros especificos*/
-@media screen and (max-width:800px){
-  .pie-pagina .grupo-1{
-      width: 90%;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap:30px;
-      padding: 35px 0px;
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
   }
 }
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?y57dub');
-  src:  url('../fonts/icomoon.eot?y57dub#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon.eot?y57dub');
+  src: url('../fonts/icomoon.eot?y57dub#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?y57dub') format('truetype'),
     url('../fonts/icomoon.woff?y57dub') format('woff'),
     url('../fonts/icomoon.svg?y57dub#icomoon') format('svg');
@@ -84,7 +96,8 @@ para adaptar de mejor manera el ancho del viewport utilizando algunos parametros
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -101,17 +114,21 @@ para adaptar de mejor manera el ancho del viewport utilizando algunos parametros
 
 .icon-discord:before {
   content: "\e900";
-  
+
 }
+
 .icon-facebook:before {
   content: "\ea90";
 }
+
 .icon-instagram:before {
   content: "\ea92";
 }
+
 .icon-twitter:before {
   content: "\ea96";
 }
+
 .icon-youtube:before {
   content: "\ea9d";
 }

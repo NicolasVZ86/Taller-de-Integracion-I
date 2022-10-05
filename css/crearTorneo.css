@@ -1,7 +1,9 @@
 body {
     background-image: url("../imagenes/fondo_ftorneo.jpg");
-    color: rgb(255, 184, 0);
+    background-color: rgb(3, 23, 40);
+
 }
+
 header{
     height: 150px;
 }

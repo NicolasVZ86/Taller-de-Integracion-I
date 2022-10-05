@@ -1,20 +1,29 @@
 /*fondo de pantalla y cambio de color de letras con estilo de grid a la pagina */
 body{
-    background-color: #0a141d;
-    color: rgb(255, 184, 0);
+    background-color: rgb(3, 23, 40);
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 300px 700px 300px ;
+    grid-template-rows: 100px 700px 100px;
+    justify-content: center;
+
+    grid-template-areas: 
+    "header header header"
+    "formulario formulario formulario"
+    "footer footer footer";
     text-align: center;
 }
 header{
     height: 150px;
-    width: 100%;
+    grid-area: header;
 }
 footer{
     height: 100px;
-
+    grid-area: footer;
 }
 main{
-    height: 700px;
     text-align: center;
+    grid-area: formulario;
 }
 /* Cambiamos los estilos de el h1,input,spany textarea */
 h1{
