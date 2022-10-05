@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="../css/estiloheader.css">
     <link rel="stylesheet" href="../css/style_footer.css">
     <link rel="stylesheet" href="../css/Style_Perfil.css">
+    <link rel="stylesheet" href="../css/estiloheader.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="link_1">
     <header>
+        <div id="logo">
+            <img src="../imagenes/gamer.webp" alt="no ta">
+            <button id="modoos" onclick="hola()">Modo Claro</button>
+            <h1>Torneos UCT</h1>
+        </div>
         <div id="header">
 			<ul class="nav">
 				<li><a href="../html/Home.html">Inicio</a></li>
@@ -28,7 +34,7 @@
 					</ul>
 				</li>
 				<li><a href="../html/Soporte.html">Soporte</a></li>
-                <li><a href="../html/Perfil.html">Perfil</a>
+                <li><a href="../html/Perfil.php">Perfil</a>
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
                     </ul>
@@ -63,20 +69,12 @@
             </div>
             <!-- Todos los datos se cambiaran por un form en php -->
             <div class="usuario_pie">
-                <div class="datos">
-                     <li><i class="icono icon-image">Juegos.</i></li>
-                     <li><i class="icono icon-image">Partidas ganadas</i></li>
-                     <li><i class="icono icon-image">Equipos</i></li>
-                     <li><i class="icono icon-image">Partidas perdidas</i></li>
-
+                <h2>Historial</h2>
+                <div id="historial">
+                    <?php
+                    include("/php/datosperfil.php")
+                    ?>
                 </div>
-                <div class="datos">
-                    <li><i class="icono icon-image">Porcentaje de winrate</i></li>
-                    <li><i class="icono icon-image">Gmail</i></li>
-                    <li><i class="icono icon-image">Torneos participados</i></li>
-                    <li><i class="icono icon-image">Torneos ganados</i></li>
-
-               </div>
             </div>
         </section>
     </main>
@@ -85,7 +83,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="/imagenes/clash.jpg" alt="anashei">
+                        <img src="../imagenes/clash.jpg" alt="anashei">
                     </a>
                 </figure>
             </div>
@@ -111,4 +109,5 @@
         </div>
     </footer>
 </body>
+<script src="../java/header.js"></script>
 </html>
