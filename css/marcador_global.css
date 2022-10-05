@@ -6,8 +6,10 @@
 body {
   min-height: 100vh;
   min-width: 100vw;
+  background-color: rgb(3, 23, 40);
 }
 header {
+	height: 150px;
 	min-height: 10vh;
 }
 main {

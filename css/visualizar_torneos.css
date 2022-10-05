@@ -5,10 +5,11 @@
 }
 body {
 	min-height: 110vh;
-	background-color: rgb(1, 0, 30);
+	background-color: rgb(3, 23, 40);
   color: rgb(255, 255, 255);
 }
 header {
+	height: 150px;
 	min-height: 10vh;
 }
 main {

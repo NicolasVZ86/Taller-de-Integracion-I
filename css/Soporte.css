@@ -19,13 +19,13 @@
 }
 
 header {
-  height: 10vh;
+  height: 150px;
 }
 
 body {
   min-width: 100vw;
   min-height: 90vh;
-  background-color: rgb(1, 0, 30);
+  background-color: rgb(3, 23, 40);
 }
 
 article {

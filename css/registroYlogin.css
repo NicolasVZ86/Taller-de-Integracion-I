@@ -6,7 +6,7 @@ body {
     background-image: url("../imagenes/fondo-registro.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-
+    background-color: rgb(3, 23, 40);
     color: azure;
 }
 
@@ -25,7 +25,7 @@ body {
 
 header {
     grid-area: header;
-    height: 120px;
+    height: 150px;
 }
 
 
