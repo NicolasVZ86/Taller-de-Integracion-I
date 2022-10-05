@@ -3,40 +3,11 @@
     $database = "Torneos";
     $username = "root";
     $password = "";
-    $conn = mysqli_connect($servername, $username, $password, $database);
+    $conn = new mysqli($servername, $username, $password, $database);
     if ($conn -> connect_errno)
     {
         die("Fallo la conexion:(".$conn -> mysqli_connect_errno().")".$conn-> mysqli_connect_error());
     }
-    $where="";
-    $nombre=$_POST['xName'];
-    $juego=$_POST['xJuego'];
-    $llaves=$_POST['xLlaves'];
-
-    if (isset($_POST['buscar']))
-    {
-	    if (empty($_POST['Juego']))
-	    {
-		    $where="where N_torneo like '".$nombre."%'";
-	    }
-
-	    else if (empty($_POST['Nombre']))
-	    {
-		    $where="where N_jue_dep='".$juego."'";
-	    }
-
-	    else
-	    {
-		    $where="where N_torneo like '".$nombre."%' and N_jue_dep='".$juego."'";
-	    }
-    }
-    // $torneos="SELECT * FROM Torneos $where";
-    // $resJuegos=$conn->query($torneos);
-    // $resllaves=$conn->query($torneos);
-    // if(mysqli_num_rows($resJuegos)==0)
-    // {
-	// $mensaje="<h1>No hay registros que coincidan con su criterio de búsqueda.</h1>";
-    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,29 +51,53 @@
     <main>
         <section class="buscador">
             <div class="filtro">
-                <form method="post">
-                    <input type="text" placeholder="Nombre..." class="xnombre" name="xName">
-                    <select class="xjuego" name="xGames">
-                        <option value="">Juego o deporte</option>
-                        <?
-						while ($resJuegos = $resCarreras->fetch_array(MYSQLI_BOTH))
-						{
-							echo '<option value="'.$resJuegos['N_jue_dep'].'">'.$resJuegos['N_jue_dep'].'</option>';
-                        }
-                        ?>
-                    </select>
-                    <select class="xllaves" name="xKeys">
-                    <option value="">Llaves</option>
-					<?
-						while ($resllaves = $resCarreras->fetch_array(MYSQLI_BOTH))
-						{
-							echo '<option value="'.$resllaves['Cant_llaves'].'">'.$resllaves['Cant_llaves'].'</option>';
-						}
-					?>
-                    </select>
-                    <button class="buscar" type="submit">Buscar</button>
+                <form name="Filtro" method="POST" action="Torneos.php">
+                    <input name='N_torneo' id="xName"type="text" placeholder="Nombre..." class="xnombre" value="<?php echo $_POST['N_torneo']?>">
                 </form>
             </div>
+                <div class="fil">
+                    <table class="tabla2">
+                        <tr>
+                            <th>
+                                Juego
+                                <select name="N_jue_dep" id="xJuego">
+                                    <?php if ($_POST["N_jue_dep"] != '')?>
+                                    <option value="<?phpecho $_POST["N_jue_dep"]?>"><?php echo $_POST["N_jue_dep"]?></option>
+                                    <option value="">Todos</option>
+                                    <option value="Counter Strike: Global Offensive">CS:GO</option>
+                                    <option value="Rocket League">Rocket League</option>
+                                    <option value="League of legends">League of Legends</option>
+                                </select>
+                            </th>
+                            
+                            <th>
+                                LLaves
+                                <select name="Cant_llaves" id="xLlaves">
+                                    <?php if ($_POST["Cant_llaves"] != '')?>
+                                    <option value="<?php echo $_POST["Cant_llaves"]?>"><?php echo $_POST["Cant_llaves"]?></option>
+                                    <option value="">Todas</option>
+                                    <option value="16">16</option>
+                                    <option value="8">8</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-success" value="Ver">
+                </div>
+                <?php
+                if ($_POST["N_torneo"] == '' AND $_POST["N_jue_dep"] == 'Todos' AND $_POST["Cant_llaves"] == 'Todas'){ $filtro='';} else{
+                if ($_POST["N_torneo"] != '' AND $_POST["N_jue_dep"] == 'Todos' AND $_POST["Cant_llaves"] == 'Todas'){ $filtro="WHERE N_torneo= '".$_POST["N_torneo"]."'";}}
+                if ($_POST["N_torneo"] == '' AND $_POST["N_jue_dep"] != 'Todos' AND $_POST["Cant_llaves"] == 'Todas'){ $filtro="WHERE N_torneo= '".$_POST["N_torneo"]."' AND N_jue_dep='".$_POST["N_jue_dep"]."'";}
+                if ($_POST["N_torneo"] != '' AND $_POST["N_jue_dep"] != 'Todos' AND $_POST["Cant_llaves"] == 'Todas'){ $filtro="WHERE N_torneo= '".$_POST["N_torneo"]."' AND N_jue_dep='".$_POST["N_jue_dep"]."'";}
+                if ($_POST["N_torneo"] == '' AND $_POST["N_jue_dep"] == 'Todos' AND $_POST["Cant_llaves"] != 'Todas'){ $filtro="WHERE N_torneo= '".$_POST["N_torneo"]."' AND N_jue_dep='".$_POST["N_jue_dep"]."' AND Cant_llaves='".$_POST["Cant_llaves"]."'";}
+                if ($_POST["N_torneo"] == '' AND $_POST["N_jue_dep"] != 'Todos' AND $_POST["Cant_llaves"] != 'Todas'){ $filtro="WHERE N_torneo= '".$_POST["N_torneo"]."' AND N_jue_dep='".$_POST["N_jue_dep"]."' AND Cant_llaves='".$_POST["Cant_llaves"]."'";}
+                if ($_POST["N_torneo"] != '' AND $_POST["N_jue_dep"] != 'Todos' AND $_POST["Cant_llaves"] != 'Todas'){ $filtro="WHERE N_torneo= '".$_POST["N_torneo"]."' AND N_jue_dep='".$_POST["N_jue_dep"]."' AND Cant_llaves='".$_POST["Cant_llaves"]."'";}
+
+                $sql=mysqli_query("SELECT * FROM torneo $filtro")
+                ?>
             <div class="tourn">
                 <table class="tabla">
                     <tr>
@@ -111,18 +106,14 @@
                         <th>Juego o deporte</th>
                         <th>Cantidad de llaves</th>
                     </tr>
-                    <!-- Cmabio en php -->
-                    <?php
-                    $sql="SELECT * from torneo";
-                    $result=mysqli_query($conn,$sql);
-
-                    while($mostrar=mysqli_fetch_array($result)){
-                        ?>
+                    <?php 
+                        while($arrow=mysqli_fetch_assoc($sql)){
+                    ?>
                     <tr>
-                        <td><?php echo $mostrar['Id_Torneo']?></td>
-                        <td><?php echo $mostrar['N_torneo']?></td>
-                        <td><?php echo $mostrar['N_jue_dep']?></td>
-                        <td><?php echo $mostrar['Cant_llaves']?></td>
+                        <td><?php echo $arrow['Id_Torneo']?></td>
+                        <td><?php echo $arrow['N_torneo']?></td>
+                        <td><?php echo $arrow['N_jue_dep']?></td>
+                        <td><?php echo $arrow['Cant_llaves']?></td>
                     </tr>
                 <?php
                 }
