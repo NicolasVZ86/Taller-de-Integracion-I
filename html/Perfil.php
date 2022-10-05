@@ -33,7 +33,7 @@
 					</ul>
 				</li>
 				<li><a href="../html/Soporte.html">Soporte</a></li>
-                <li><a href="../html/Perfil.html">Perfil</a>
+                <li><a href="../html/Perfil.php">Perfil</a>
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
                     </ul>
@@ -68,20 +68,12 @@
             </div>
             <!-- Todos los datos se cambiaran por un form en php -->
             <div class="usuario_pie">
-                <div class="datos">
-                     <li><i class="icono icon-image">Juegos.</i></li>
-                     <li><i class="icono icon-image">Partidas ganadas</i></li>
-                     <li><i class="icono icon-image">Equipos</i></li>
-                     <li><i class="icono icon-image">Partidas perdidas</i></li>
-
+                <h2>Historial</h2>
+                <div id="historial">
+                    <?php
+                    include("/php/datosperfil.php")
+                    ?>
                 </div>
-                <div class="datos">
-                    <li><i class="icono icon-image">Porcentaje de winrate</i></li>
-                    <li><i class="icono icon-image">Gmail</i></li>
-                    <li><i class="icono icon-image">Torneos participados</i></li>
-                    <li><i class="icono icon-image">Torneos ganados</i></li>
-
-               </div>
             </div>
         </section>
     </main>
