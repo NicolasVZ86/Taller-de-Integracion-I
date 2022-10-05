@@ -1,5 +1,5 @@
 body{
-    background-color: #031728;
+    background-color: rgb(3, 23, 40);
     color: rgb(255, 184, 0)
 }
 
@@ -89,23 +89,3 @@ footer{
     grid-area: info3;
 }
 
-.botonBienvenida {
-    padding: 10px;
-    border-radius: 20px;
-    width: 350px;
-    background-color: aqua;
-    text-decoration: none;
-    margin-top: 5%;
-    margin-bottom: 2rem;
-}
-
-#hola {
-    display: block;
-    text-align: center;
-}
-
-#hola div a{
-    display: inline-block;
-    align-items: center;
-    width: 51%;    
-}
