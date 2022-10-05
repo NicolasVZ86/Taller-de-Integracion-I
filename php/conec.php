@@ -1,6 +1,6 @@
 <?php
 
-$conex = mysqli_connect("pillan.inf.uct.cl","nvalenzuela","nvalenzuela","historial-usuario");
+$conex = mysqli_connect("db.inf.uct.cl","nvalenzuela","nvalenzuela","2022_nvalenzuela");
 
 
 ?>
