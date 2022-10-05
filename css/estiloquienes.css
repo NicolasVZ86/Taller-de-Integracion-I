@@ -1,6 +1,6 @@
 /* Dimeciones */
 header {
-    height: 150px;
+    height: 100px;
 }
 main {
     height:800px;
@@ -11,7 +11,7 @@ footer {
 /*fondo de pantalla y cambio de color de letras*/
 body{
     background-color: #0a141d;
-    color: rgb(255, 184, 0)
+    color: aliceblue;
 }
 /*Cambio de color de fondo elegir estilos de letra y alinear los texto al centro*/
 main div{
