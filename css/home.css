@@ -1,18 +1,22 @@
-body{
-    background-color: rgb(3, 23, 40);
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: #031728;
     color: rgb(255, 184, 0)
 }
 
-
-
 /* Dimenciones de la pagina */
-header{
+header {
     height: 150px;
 }
-main{
+
+
+main {
     height: auto;
 }
-footer{
+
+
+footer {
     height: 200px;
 }
 
@@ -21,33 +25,127 @@ footer{
     display: inline-block;
     text-align: center;
     height: 20%;
+    width: 50%;
     margin-left: 25%;
 }
-#bienvenida h1{
-    font-size:60px;
-    margin-bottom: 0%;
-    padding: 10px;
-    -webkit-text-stroke: 2px white;
+
+#bienvenida h1 {
+    font-size: 50px;
+    position: absolute;
+    width: 50%;
 }
 
+.border {
+    color: black;
+    text-shadow:
+        -1px -1px 0 rgb(255, 174, 0),
+        1px -1px 0 rgb(255, 174, 0),
+        -1px 1px 0 rgb(255, 174, 0),
+        1px 1px 0 rgb(255, 174, 0);
+}
+
+.wave {
+
+    color: rgb(255, 174, 0);
+    animation: wave 3s ease-in-out infinite;
+}
+
+
+@keyframes wave {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+
 /* Div de los juegos y deportes */
-#juegodeportes{
+#juegodeportes {
     margin: 10%;
     width: 80%;
     text-align: center;
 }
 
-.imagenesdejuegos{
+#juegosdeportes p {
+    left: 25%;
+}
+
+.imagenesdejuegos {
     display: inline-block;
     position: relative;
     width: 20%;
-    height: 30% ;   
+    height: 30%;
     margin: 2%;
+    justify-content: center;
+    align-items: center;
 }
 
-.imagenesdejuegos>img{
-    margin: 2%;
+
+
+/*Animaciones imagenes juego*/
+.imagenesdejuegos figure {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(220, 235, 2, 0.349);
     object-fit: cover;
+    cursor: pointer;
+}
+
+.imagenesdejuegos figure img {
+    transition: all 500ms ease-out;
+
+}
+
+.imagenesdejuegos figure .animacion {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.imagenesdejuegos figure:hover>.animacion {
+    opacity: 1;
+    visibility: visible;
+}
+
+.imagenesdejuegos figure:hover>.animacion h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.imagenesdejuegos figure .animacion h3 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.imagenesdejuegos figure:hover>img {
+    transform: scale(1.1);
+}
+
+.imagenesdejuegos figure .animacion p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+
 }
 
 /* UINFO ADICIONA */
@@ -58,10 +156,10 @@ footer{
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
 
-    grid-template-areas: 
-    "icono1 info1"
-    "icono2 info2"
-    "icono3 info3";
+    grid-template-areas:
+        "icono1 info1"
+        "icono2 info2"
+        "icono3 info3";
 }
 
 .item1_image {
@@ -78,7 +176,7 @@ footer{
 
 .item1_info {
     grid-area: info1;
-    
+
 }
 
 .item2_info {
@@ -89,3 +187,27 @@ footer{
     grid-area: info3;
 }
 
+.botonBienvenida {
+    padding: 10px;
+    border-radius: 20px;
+    width: 350px;
+    background-color: aqua;
+    text-decoration: none;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+}
+
+.botonBienvenida:hover {
+    background-color: rgb(0, 167, 167);
+}
+
+#hola {
+    display: block;
+    text-align: center;
+}
+
+#hola div a {
+    display: inline-block;
+    align-items: center;
+    width: 51%;
+}
