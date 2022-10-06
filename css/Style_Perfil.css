@@ -159,3 +159,11 @@ footer{
 .usuario_pie h2{
     width: 100%;
     text-align: center;}
+
+#historial{
+    width: 100%;
+}
+
+#historial table{
+    width: 100%;
+}
