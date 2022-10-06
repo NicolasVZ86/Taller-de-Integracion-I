@@ -25,6 +25,4 @@ if($conex){
 }else{
     echo "<h1>no se pudo conectar</h1>";
 }
-echo "<h1>hola</h1>";
-
 ?>
