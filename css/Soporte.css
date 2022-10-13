@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.preg-frecu-h2 {
+  margin-bottom: 1rem;
+}
+
+.input-text {
+  border-style: none;
+  border-radius: 14px;
+  background-color: rgb(0, 255, 213);
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: large;
+  font-weight: 600;
+  outline: none;
+}
+
+header {
+  height: 150px;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 90vh;
+  background-color: rgb(3, 23, 40);
+}
+
+article {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 25vw 1fr 25vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". pregfrecu ."
+    ". sugest ."
+    ". soporte .";
+}
+
+.PregFrecu_bloq {
+  min-height: 50vh;
+  grid-area: pregfrecu;
+  padding: 3rem 3rem;
+  color: rgb(124, 240, 255);
+}
+
+.Sugest_bloq {
+  min-height: 30vh;
+  grid-area: sugest;
+  padding: 3rem 3rem;
+  color: rgb(124, 240, 255);
+  text-align: center;
+}
+
+.sugest-h2 {
+  margin-bottom: 2rem;
+}
+
+.sugest_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-area {
+  background-color: rgb(0, 255, 213);
+}
+
+.sugest_username {
+  background-color: rgb(0, 255, 213);
+  border-style: none;
+  border-radius: 14px;
+  width: 25rem;
+  display: block;
+  margin-top: 0.7rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: large;
+  font-weight: 600;
+  outline: none;
+}
+
+.Soporte_bloq {
+  min-height: 30vh;
+  grid-area: soporte;
+  padding: 3rem 3rem;
+  color: rgb(124, 240, 255);
+}
+
+.item {
+  margin-top: 2rem;
+}
+
+.problema {
+  margin-top: 1rem;
+  padding: 2rem;
+  height: 10rem;
+  width: 100%;
+}
+
+.button-x {
+  background-color: transparent;
+  color: rgb(124, 240, 255);
+  border: 0;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+footer {
+  min-height: 10vh;
+}

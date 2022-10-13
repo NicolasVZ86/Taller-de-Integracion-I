@@ -1,0 +1,127 @@
+/* Dimeciones */
+header {
+    height: 150px;
+}
+main {
+    height:800px;
+}
+footer {
+    height: 200px;
+}
+/*fondo de pantalla y cambio de color de letras*/
+body{
+    background-color: rgb(3, 23, 40);
+    color: aliceblue;
+}
+/*Cambio de color de fondo elegir estilos de letra y alinear los texto al centro*/
+main div{
+    background-color: rgba(0, 0, 0, 0.25);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/*Darle tamaño a los div 1 y 2 elegir su tamaño de letra y alinearlos con linea tambien definirles margenes*/
+#diveq1 , #diveq2{
+    height: 40%;
+    width: 40%;
+    font-size: 15px;
+    display:inline-table;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*Definir el estilo de la lista y darle pocicion de inicio a la lista tambien aumento de tamaño de letra*/
+#oleq{
+    list-style:none ;
+    text-align: center;
+    font-size: 20px;
+}
+/*Definicon de tamaño del div 3 y margenes*/
+#diveq3{
+    height: 40%;
+    width: 80%;
+    margin-inline: 10%;
+}
+/*Ajuste de margen div 1*/
+#diveq1{
+    margin-left: 7%;
+    margin-right: 2%;
+}
+/*Ajuste de margen div 2*/
+#diveq2{
+    margin-right: 7%;
+    margin-left: 2%;
+}
+
+
+/*Colocamos en negritas los nombres de la lista*/
+#oleq p{
+    font-weight: bold;
+    margin: 2%;
+}
+/*Ajuste del titulo del bloque 3*/
+#diveq3 h1{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding: 3%;
+}
+/*Ajuste del parrafo del bloque 3*/
+#diveq3 p{
+    padding: 3%;
+}
+/*Ajuste de parrafo de bloque 3*/
+#diveq2 p{
+    padding: 3%;
+}
+
+#oleq p:hover{
+    color: red;
+} 
+
+#diveq1>h1, #diveq2>h1{
+    margin: 5%;
+}
+ 
+
+.card {
+    width: 450px;
+    height: 250px;
+    margin: auto;
+    border-radius: 4px;
+    background: #212121;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+  .card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1px solid #8f20ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card p:hover {
+    flex: 4;
+  }
+  
+  .card p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #b70c0c;
+    letter-spacing: .1em;
+  }
+  
+  .card p:hover span {
+    transform: rotate(0);
+  }

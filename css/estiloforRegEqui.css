@@ -1,0 +1,67 @@
+/*fondo de pantalla y cambio de color de letras con estilo de grid a la pagina */
+body{
+    background-color: rgb(3, 23, 40);
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 300px 700px 300px ;
+    grid-template-rows: 100px 700px 100px;
+    justify-content: center;
+
+    grid-template-areas: 
+    "header header header"
+    "formulario formulario formulario"
+    "footer footer footer";
+    text-align: center;
+}
+header{
+    height: 150px;
+    grid-area: header;
+}
+footer{
+    height: 100px;
+    grid-area: footer;
+}
+main{
+    text-align: center;
+    grid-area: formulario;
+}
+/* Cambiamos los estilos de el h1,input,spany textarea */
+h1{
+    font-size: 40px;
+}
+input{
+    margin:10px;
+    height: 20px;
+    width: 200px;
+}
+span{
+    margin-right: 40px;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    vertical-align: center;
+}
+
+textarea{
+    display: inline-block;
+    height: 30px !important;
+    border: none;
+    overflow: auto;
+    padding: 8px 9px;
+    resize: none;
+    width: 300px ;
+}
+select{
+    margin:10px;
+    height: 20px;
+    width: 200px;
+}
+/* Dimenciones del botn que nvia los datos */
+#inputenvi{
+    height: 50px;
+    width: 200px;
+}
+/* Margen de el div de los textarea */
+.comentarios{
+    margin: 10px;
+}
