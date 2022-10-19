@@ -28,9 +28,12 @@ footer{
     width: 80%;
     height: 100px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
+
 .filtro form{
+    display: flex;
     font-size: 15px;
     padding: 10px ;
 }
@@ -38,6 +41,8 @@ footer{
     background-color: gray;
     color:white;
     height: 50px;
+    margin: 10px;
+    
 }
 .filtro form input::placeholder{
     color:white;
@@ -47,6 +52,7 @@ footer{
     color:white;
     height: 55px;
     border: 2px solid black;
+    margin: 10px;
 }
 .filtro form button{
     background-color: gray;
@@ -54,6 +60,7 @@ footer{
     height: 55px;
     width: 100px;
     border-color:black;
+    margin: 10px;
 }
 .tourn{
     display: flex;
@@ -76,17 +83,17 @@ footer{
     padding: 10px;
     border: 4px solid gray;
 }
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
     .filtro {
         width: 100%;
     }
-    .filtro .xnombre,
-    .filtro .xjuego,
-    .filtro .xllaves,
+    .filtro .xName,
+    .filtro .xJuego,
+    .filtro .xLlaves,
     .filtro .buscar{
         width: 100px;
     }
     .tourn {
         width: 95%;
     }
-}
+} */
