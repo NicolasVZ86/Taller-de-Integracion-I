@@ -34,3 +34,4 @@ if ($resultado->num_rows > 0) {
     $salida .= "No hay datos";
 }
 echo $salida;
+?>
