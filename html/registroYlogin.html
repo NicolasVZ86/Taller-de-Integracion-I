@@ -10,8 +10,13 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Registro y login</title>
 </head>
-<body>
-    <header>
+<body class="link_1" id="bodygrid_contenedor">
+    <header id="headergrid_caja">
+        <div id="logo">
+            <img src="../imagenes/gamer.webp" alt="no ta">
+            <button id="modoos" onclick="hola()">Modo Claro</button>
+            <h1>Torneos UCT</h1>
+        </div>
         <div id="header">
 			<ul class="nav">
 				<li><a href="../html/Home.html">Inicio</a></li>
@@ -37,42 +42,41 @@
 			</ul>
 		</div>
     </header>
-    <main id="gridcontenedor_formularios">
-        <section class="item1_mensajeAlternativa_iniciarSesion">
-            <h1>Bienvenido a Torneos UCT</h1>
-            <p>Si ya tienes una cuenta, por favor inicia sesion aquí</p>
-            <div class="boton_iniciarfSesion">
-                <button>Iniciar Sesion</button>
-            </div>
-        </section>
-        <article id="item2_contenedor_registro">
-            <form action="#" class="formulario_registro">
+<!------------------------------------------------------------------------------------------->
+    <main id="mainitem_formularios">
+        <!--Formulario de registro-->
+        <article id="article_formularioregistro">
+            <form action="#" method="get" id="idform_formularioregistro" class="classform_formularioPrincipal">
                 <fieldset id="fieldset_registro">
                     <legend><b>Crea una cuenta</b></legend>
                     <br>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="ingrese su nombre"/>                
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre"/>
+                    <i id="nombre_error"></i>
                     <br />
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" placeholder="ingrese su apellido"/>                    
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido" required/>
+                    <i id="apellido_error"></i>        
                     <br />
-                    <label for="frcorreo">Correo</label>
-                    <input type="email" id="frcorreo" placeholder="ingrese su correo" />
+                    <label for="frcorreo">Correo</label><br>
+                    <input type="email" id="frcorreo" name="correo" placeholder="ingrese su correo" required/>
+                    <i id="correo_error"></i>
                     <br />                
-                    <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario" placeholder="ingrese su nombre de usuario"/>
+                    <label for="usuario">Usuario</label><br>
+                    <input type="text" id="usuario" name="usuario" placeholder="ingrese su nombre de usuario" required/>
+                    <i id="usuario_error"></i>
                     <br />                
-                    <label for="frcontrasena">Contraseña</label>
-                    <input type="password" id="frcontrasena" placeholder="ingrese una contraseña"/>
+                    <label for="frcontrasena">Contraseña</label><br>
+                    <input type="password" id="frcontrasena" name="contrasena" placeholder="ingrese una contraseña" required/>
+                    <i id="contrasena_error"></i>
                     <br />
-                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
-                    <input type="date" id="fecha-nacimiento" placeholder="ingrese su fecha de nacimiento"/>
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha-nacimiento" placeholder="ingrese su fecha de nacimiento" min="1990-01-01" max="2003-12-31" />
                     <br />
-                    <br>
-                    <label for="carrera">Escribe tu Carrera</label>
-                    <input type="text" list="carrera" name="" id="carrera" placeholder="Ingrese su carrera">
+                    <label for="carrera">Escribe tu Carrera</label><br>
+                    <input type="text" list="carrera" name="carrera" id="carrera" placeholder="Ingrese su carrera" required>
                     <datalist id="carrera">
-                        <option value="Ingeniería Civil Informática"></option>
+                        <option value="Ingeniería Civil Informática">Ingeniería Civil Informática</option>
                         <option value=""></option>
                         <option value=""></option>
                         <option value=""></option>
@@ -84,41 +88,59 @@
                     <label for="informacion">Desea recibir informacion</label>
                     <br>
                     <br>
-                    <div class="contenedorboton_CrearCuenta">
+                    <!--Boton para enviar el formulario REGISTRO-->
+                    <div class="cajaboton_crearregistro">
                         <button type="submit">Crear cuenta</button>
                     </div>
                 </fieldset>
             </form>
         </article>
-        <!--Inicio de Sesion-->
-        <article id="item3_contenedor_iniciarSesion">
-            <form action="#" class="formulario_iniciarSesion">
+        <!--Formulario de inicio de sesion-->
+        <article id="article_formularioiniciarSesion" >
+            <form action="#" id="formulario_iniciarSesion" class="classform_formularioPrincipal">
                 <h1>Inciar Sesion</h1>
                 <fieldset id="fieldset_iniciarSesion">
-                    <label for="ficorreo">Ingrese correo</label><br>
-                    <input type="email" name="" id="ficorreo" placeholder="user@example.com"><br>
+                    <label for="ficorreo">Ingrese usuario</label><br>
+                    <input type="text" name="sesion_username" id="fiusuario" placeholder="username1234"><br>
                     <label for="ficontrasena">Ingrese contraseña</label><br>
-                    <input type="password" name="" id="ficontrasena" placeholder="*************"><br>
-                    <div class="boton_submit">
-                        <input type="submit" value="Iniciar Sesion">
+                    <input type="password" name="sesion_password" id="ficontrasena" placeholder="*************"><br>
+                    <div class="cajaboton_inciarSesion">
+                        <input type="submit" value="Iniciar Sesion" onclick="enviarSesion()">
                     </div>
+                    <!--Boton para enviar el formulario INICIAR SESION-->
                 </fieldset>
+
+                <div id="error_sesion"></div>
             </form>
         </article>
-        <section class="mensajeAlternativa_registro">
+    </main>
+<!-------------------------------------------------------------------------------------------->
+    <!--Mensajes alternativos que apareceran dependiendo del modo main-->
+    <aside id="asidegrid_mensajeAlternativo">
+        <!--Mensaje alternativo para iniciar sesion-->
+        <article id="articleid_msgAltModregistro" class="articleclass_mensajeAlternativo">
+            <h1>Bienvenido a Torneos UCT</h1>
+            <p>Si ya tienes una cuenta, por favor inicia sesion aquí</p>
+            <div class="cajaboton_mensajeAlternativo_iniciarSesion">
+                <button type="submit" id="botonInciarSesion">Iniciar Sesion</button>
+            </div>
+        </article>
+        <!--Mensaje alternativo para registrarse-->
+        <article id="articleid_msgAltModsesion" class="articleclass_mensajeAlternativo">
             <h1>Bienvenido de nuevo</h1>
             <p>Si aún no tienes una cuenta, por favor registrate aquí</p>
-            <div class="boton_iniciarfRegistro">
-                <button>Registro</button>
+            <div class="cajaboton_mensajeAlternativo_registrarse">
+                <button type="submit" id="botonInciarRegistro">Registro</button>
             </div>
-        </section>
-    </main>
+        </article>
+    </aside>
+<!--------------------------------------------------------------------------------------------->
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="/imagenes/clash.jpg" alt="anashei">
+                        <img src="../imagenes/clash.jpg" alt="anashei">
                     </a>
                 </figure>
             </div>
@@ -143,6 +165,7 @@
             <small>&copy; 2022 <b>Torneos UCT</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
+<script src="../java/registroYlogin_script.js"></script>
+<script src="../java/header.js"></script>
 </body>
-<script src="scrpt.js"></script>
 </html>
