@@ -1,0 +1,55 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgb(3, 23, 40);
+}
+header {
+	height: 150px;
+	min-height: 10vh;
+}
+main {
+	background-color: rgb(1, 0, 30);
+	min-height: 120vh;
+}
+article {
+  max-height: 120vh;
+  display: grid;
+	grid-template-columns: 50vw 50vw;
+	grid-template-rows: 60vh 60vh;
+  grid-template-areas:
+    "estadistica-1 estadistica-2"
+    "estadistica-3 estadistica-3";
+}
+.sect-1 {
+	grid-area: estadistica-1;
+}
+.sect-2 {
+	grid-area: estadistica-2;
+}
+.sect-3 {
+	grid-area: estadistica-3;
+}
+.sect-1, .sect-2, .sect-3 {
+  color: rgb(124, 240, 255);
+	text-align: center;
+}
+.tit-form {
+	max-height: 5vh;
+	padding-top: 1rem;
+	font-size: xx-large;
+}
+.cuadro-info {
+	min-height: 52vh;
+	max-height: 52vh;
+	max-width: 40vw;
+	margin: 0 auto;
+	overflow: hidden;
+}
+footer {
+	min-height: 10vh;
+}
