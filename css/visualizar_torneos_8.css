@@ -1,6 +1,4 @@
-:root {
-	margin: 0;
-	padding: 0;
+html {
 	box-sizing: border-box;
 }
 body {
@@ -25,25 +23,25 @@ article {
 	background-color: rgba(12, 27, 77, 0.592);
 	border-radius: 3rem;
 	box-shadow: 0 0 8px rgba(176, 224, 230, 0.617);
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(16, 3rem);
 	grid-template-areas: 
-	"cj1    .     .     .		"
-	"cj2  cj17    .     .		"
-	"cj3  cj18    .     .		"
-	"cj4    .   cj25		. 	"
-	"cj5 	  .   cj26		. 	"
-	"cj6  cj19		.			. 	"
-	"cj7  cj20		.			. 	"
-	"cj8    .     .    cj29	"
-	"cj9 		. 		. 	 cj30	"
-	"cj10 cj21		.			. 	"
-	"cj11 cj22		.			. 	"
-	"cj12   .  cj27			. 	"
-	"cj13   .  cj28			.		"
-	"cj14 cj23		.			. 	"
-	"cj15 cj24		.			. 	"
-	"cj16   .     .     .  	"
+	"  .      .     .		"
+	"cj1      .     .		"
+	"cj2      .     .		"
+	"  .   cj9  	  . 	"
+	"  .   cj10		  . 	"
+	"cj3  		.			. 	"
+	"cj4  		.			. 	"
+	"  .      .    cj13	"
+	"	 .  		. 	 cj14	"
+	"cj5  		.			. 	"
+	"cj6		  .			. 	"
+	"  .   cj11			. 	"
+	"  .   cj12			.		"
+	"cj7  		.			. 	"
+	"cj8    	.			. 	"
+	"  .      .     .  	"
 	;
 }
 .cont-nom {
@@ -123,70 +121,6 @@ article {
 }
 .cj14 {
 	grid-area: cj14;
-	display: inline-flex;
-}
-.cj15 {
-	grid-area: cj15;
-	display: inline-flex;
-}
-.cj16 {
-	grid-area: cj16;
-	display: inline-flex;
-}
-.cj17 {
-	grid-area: cj17;
-	display: inline-flex;
-}
-.cj18 {
-	grid-area: cj18;
-	display: inline-flex;
-}
-.cj19 {
-	grid-area: cj19;
-	display: inline-flex;
-}
-.cj20 {
-	grid-area: cj20;
-	display: inline-flex;
-}
-.cj21 {
-	grid-area: cj21;
-	display: inline-flex;
-}
-.cj22 {
-	grid-area: cj22;
-	display: inline-flex;
-}
-.cj23 {
-	grid-area: cj23;
-	display: inline-flex;
-}
-.cj24 {
-	grid-area: cj24;
-	display: inline-flex;
-}
-.cj25 {
-	grid-area: cj25;
-	display: inline-flex;
-}
-.cj26 {
-	grid-area: cj26;
-	display: inline-flex;
-}
-.cj27 {
-	grid-area: cj27;
-	display: inline-flex;
-}
-.cj28 {
-	grid-area: cj28;
-	display: inline-flex;
-}
-.cj29 {
-	grid-area: cj29;
-	display: inline-flex;
-}
-.cj30 {
-	grid-area: cj30;
 	display: inline-flex;
 }
 footer {
