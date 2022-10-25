@@ -160,10 +160,7 @@ footer{
     width: 100%;
     text-align: center;}
 
-#historial{
-    width: 100%;
-}
-
-#historial table{
-    width: 100%;
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
 }
