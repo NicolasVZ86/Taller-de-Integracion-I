@@ -38,6 +38,9 @@ const form = document.getElementById("idform_formularioregistro");
 const inputs = document.querySelectorAll("#idform_formularioregistro input");
 
 
+
+var puede = false
+
 form.addEventListener("submit", (hacer) => {
     hacer.preventDefault();
 })
@@ -55,6 +58,7 @@ function validarFormulario (validar) {
             if(expresiones.nombre.test(validar.target.value)){
                 document.getElementById("nombre_error").innerHTML = "Es válido!";
                 document.getElementById("nombre_error").classList.add("inputcorrecto");
+                puede = true
             } else {
                 //Lo que pasará cuando el input es incorrecto
                 document.getElementById("nombre_error").innerHTML = "No puede contener letras, números ni guion";
@@ -66,6 +70,7 @@ function validarFormulario (validar) {
             if (expresiones.nombre.test(validar.target.value)){
                 document.getElementById("apellido_error").innerHTML = "Es válido!" ;
                 document.getElementById("apellido_error").classList.add("inputcorrecto");
+                puede = true
             } else {
                 document.getElementById("apellido_error").innerHTML = "No puede contener letras, números ni guion";
                 document.getElementById("apellido_error").classList.remove("inputcorrecto");
@@ -76,6 +81,7 @@ function validarFormulario (validar) {
             if (expresiones.correo.test(validar.target.value)){
                 document.getElementById("correo_error").innerHTML = "Es válido!";
                 document.getElementById("correo_error").classList.add("inputcorrecto");
+                puede = true
             } else {
                 document.getElementById("correo_error").innerHTML = "Ingrese un correo válido";
                 document.getElementById("correo_error").classList.remove("inputcorrecto");
@@ -86,6 +92,7 @@ function validarFormulario (validar) {
             if (expresiones.usuario.test(validar.target.value)){
                 document.getElementById("usuario_error").innerHTML = "Es valido!";
                 document.getElementById("usuario_error").classList.add("inputcorrecto");
+                puede = true
 
             } else {
                 document.getElementById("usuario_error").innerHTML = "Sólo letras, numeros, guion y guion_bajo";
@@ -97,6 +104,7 @@ function validarFormulario (validar) {
             if (expresiones.password.test(validar.target.value)){
                 document.getElementById("contrasena_error").innerHTML = "Es válido!";
                 document.getElementById("contrasena_error").classList.add("inputcorrecto");
+                puede = true
             } else {
                 document.getElementById("contrasena_error").innerHTML = "Ingrese un contraseña valida";
                 document.getElementById("contrasena_error").classList.remove("inputcorrecto");
@@ -105,6 +113,28 @@ function validarFormulario (validar) {
         break;
     }
 }
+/* crear cuenta en base de datos */
+async function enviarcuenta(datosFormulario){
+if (puede){
+    await fetch('../php/agregarusuario.php', {
+        method: 'POST',
+        body: datosFormulario
+    });
+}else{
+    alert("complete los campos bien")
+}
+}
+document
+.getElementById('idform_formularioregistro')
+.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const formulario = document.getElementById('idform_formularioregistro');
+    const formularioData = new FormData(formulario);
+    enviarcuenta(formularioData);
+    });
+
+
+/* ----------------------------------------------------------*/
 
 const form_sesion = document.getElementById("formulario_iniciarSesion");
 const usuario_sesion = document.getElementById("fiusuario");
