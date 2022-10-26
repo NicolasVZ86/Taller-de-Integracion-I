@@ -1,9 +1,8 @@
 body {
     background-image: url("../imagenes/fondo_ftorneo.jpg");
-    background-color: rgb(3, 23, 40);
+    color: rgb(255, 184, 0);
 
 }
-
 header{
     height: 150px;
 }
@@ -13,86 +12,55 @@ main{
 footer{
     height: 200px;
 }
-
-#contenedorGrid_creartorneo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 1fr 1fr 1vh;
-
-    grid-template-areas: 
-    "header header header header"
-    ". ftorneo ftorneo ."
-    ". ftorneo ftorneo ."
-    "footer footer footer footer";
-
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-}
-
-.item1Grid_creartorneo {
-    grid-area: ftorneo;
-}
-
-#contenedorGrid_formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-
-    grid-template-areas: 
-    "fleft fright";
-
-    background-color:rgb(21, 53, 77, 0.25);
-    font-size: 16px;
-    width: 100%;
-    color: #eee;
-}
-
 h1 {
     color: #eee;
     font-size: 32px;
     text-align: center;
     -webkit-text-stroke: 1px aqua; 
 }
-
 fieldset {
     border-color:rgb(77, 87, 69);
+    text-align: justify;
+    width: 50%;
+    margin-bottom: 15px;
 }
-
-.item1Gridleft_formulario {
-    grid-area: fleft;
-}
-
-.item2Girdright_formulario {
-    grid-area: fright;
-}
-
-label > input {
+input {
     padding: 10px;
     background-color: #191e2e;
     border-width: 2px;
     border-color: #313c60;
     color: aqua;
+    width: 400px;
 }
-
 input::placeholder {
     color: aqua;
 }
-
-label > select {
+select {
     padding: 10px;
     background-color: #191e2e;
     border-width: 2px;
     border-color: #313c60;
-    color:aqua
+    color:aqua;
+    width: 400px;
+    margin-bottom: 5px;
 }
-
-.pie-pagina {
-    grid-area: footer;
+textarea {
+    resize: none;
+    background-color: #191e2e;
+    color: aqua;
+    width: 400px;
+}
+.sgte_paso, .atras_paso {
+    padding: 5px;
+    letter-spacing: 2px;
+    border-color: aqua;
+    background-color: rgb(21, 53, 77);
+    color: aqua;
+    cursor: pointer;
 }
 
 .botonCreartorneo {
-    text-align: center;
     padding-top: 10px;
-    
 }
 
 .botonCreartorneo input {
@@ -102,5 +70,14 @@ label > select {
     background-color: rgb(21, 53, 77);
     color: aqua;
     cursor: pointer;
+
 }
 
+.pie-pagina {
+    grid-area: footer;
+}
+
+#visual_pasos ul li {
+    display: inline;
+    margin-left: 10px;
+}
