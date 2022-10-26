@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../css/style_footer.css">
     <link rel="stylesheet" href="../css/Style_Perfil.css">
     <link rel="stylesheet" href="../css/estiloheader.css">
+    <script src="../java/muestrahisto.js"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body class="link_1">
     <header>
@@ -33,7 +36,7 @@
 					</ul>
 				</li>
 				<li><a href="../html/Soporte.html">Soporte</a></li>
-                <li><a href="../html/Perfil.php">Perfil</a>
+                <li><a href="../html/Perfil.html">Perfil</a>
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
                     </ul>
@@ -47,7 +50,7 @@
             <div class="perfil_header">
                 <div class="perfil_portada">
                     <div class="perfil_avatar">
-                        <img src="../images/Sin título.png" alt="avatar">
+                        <img src="../imagenes/Sin_título.png" alt="avatar">
                         <button type="button" class="boton_avatar">
                             <i class="far fa-image"></i>
                             cambiar imagen
@@ -69,11 +72,9 @@
             <!-- Todos los datos se cambiaran por un form en php -->
             <div class="usuario_pie">
                 <h2>Historial</h2>
-                <div id="historial">
-                    <?php
-                    include("../php/datosperfil.php")
-                    ?>
-                </div>
+                <div>
+            <div id="datos"></div>
+            </div>
             </div>
         </section>
     </main>
@@ -108,5 +109,8 @@
         </div>
     </footer>
 </body>
+<script src="../java/muestrahisto.js"></script>
 <script src="../java/header.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </html>
