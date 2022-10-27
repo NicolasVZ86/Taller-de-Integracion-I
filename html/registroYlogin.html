@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/botonayuda.css">
+    <link rel="stylesheet" href="../css/registroYlogin.css">
+    <link rel="stylesheet" href="../css/style_footer.css">
+    <link rel="stylesheet" href="../css/estiloheader.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Registro y login</title>
+</head>
+<body class="link_1" id="bodygrid_contenedor">
+    <header id="headergrid_caja">
+        <div id="logo">
+            <img src="../imagenes/gamer.webp" alt="no ta">
+            <button id="modoos" onclick="hola()">Modo Claro</button>
+            <h1>Torneos UCT</h1>
+        </div>
+        <div id="header">
+			<ul class="nav">
+				<li><a href="../html/Home.html">Inicio</a></li>
+				<li><a href="../html/Torneos.html">Torneos</a>
+					<ul>
+						<li><a href="../html/crearTorneo.html">Creacion de torneos</a></li>
+						<li><a href="../html/Torneos.html">Torneos disponibles</a></li>
+					</ul>
+				</li>
+                <li><a href="../html/PagBusEquipo.html">Equipos</a>
+					<ul>
+						<li><a href="../html/forRegEqui.html">Creacion de Equipos</a></li>
+						<li><a href="../html/PagBusEquipo.html">Busqueda de equipo</a></li>
+					</ul>
+				</li>
+				<li><a href="../html/Soporte.html">Soporte</a></li>
+                <li><a href="../html/Perfil.html">Perfil</a>
+                    <ul>
+                        <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/quienes_somos.html">Quienes somos</a></li>
+			</ul>
+		</div>
+    </header>
+<!------------------------------------------------------------------------------------------->
+    <main id="mainitem_formularios">
+        <!--Formulario de registro-->
+        <article id="article_formularioregistro">
+            <form action="#" id="idform_formularioregistro" class="classform_formularioPrincipal">
+                <fieldset id="fieldset_registro">
+                    <legend><b>Crea una cuenta</b></legend>
+                    <br>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre"/>
+                    <span class="error"></span>      
+                    <br />
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="ingrese su apellido" required/>
+                    <span class="error"></span>                      
+                    <br />
+                    <label for="frcorreo">Correo</label><br>
+                    <input type="email" id="frcorreo" name="correo" placeholder="ingrese su correo" required/>
+                    <span class="error"></span>
+                    <br />                
+                    <label for="usuario">Usuario</label><br>
+                    <input type="text" id="usuario" name="usuario" placeholder="ingrese su nombre de usuario" required/>
+                    <br />                
+                    <label for="frcontrasena">Contraseña</label><br>
+                    <input type="password" id="frcontrasena" name="contrasena" placeholder="ingrese una contraseña" required/>
+                    <br />
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha-nacimiento" placeholder="ingrese su fecha de nacimiento" />
+                    <br />
+                    <label for="carrera">Escribe tu Carrera</label><br>
+                    <input type="text" list="carrera" name="carrera" id="carrera" placeholder="Ingrese su carrera" required>
+                    <datalist id="carrera">
+                        <option value="Ingeniería Civil Informática"></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </datalist>
+
+                    <input type="checkbox" id="terminos" />
+                    <label for="terminos">Aceptar terminos y condiciones</label>
+                    <input type="checkbox" id="informacion" />
+                    <label for="informacion">Desea recibir informacion</label>
+                    <br>
+                    <br>
+                    <!--Boton para enviar el formulario REGISTRO-->
+                    <div class="cajaboton_crearregistro">
+                        <button type="submit">Crear cuenta</button>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+        <!--Formulario de inicio de sesion-->
+        <article id="article_formularioiniciarSesion" >
+            <form action="#" id="formulario_iniciarSesion" class="classform_formularioPrincipal">
+                <h1>Inciar Sesion</h1>
+                <fieldset id="fieldset_iniciarSesion">
+                    <label for="ficorreo">Ingrese correo</label><br>
+                    <input type="email" name="" id="ficorreo" placeholder="user@example.com"><br>
+                    <label for="ficontrasena">Ingrese contraseña</label><br>
+                    <input type="password" name="" id="ficontrasena" placeholder="*************"><br>
+                    <!--Boton para enviar el formulario INICIAR SESION-->
+                    <div class="cajaboton_inciarSesion">
+                        <input type="submit" value="Iniciar Sesion">
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+<!-------------------------------------------------------------------------------------------->
+    <!--Mensajes alternativos que apareceran dependiendo del modo main-->
+    <aside id="asidegrid_mensajeAlternativo">
+        <!--Mensaje alternativo para iniciar sesion-->
+        <article id="articleid_msgAltModregistro" class="articleclass_mensajeAlternativo">
+            <h1>Bienvenido a Torneos UCT</h1>
+            <p>Si ya tienes una cuenta, por favor inicia sesion aquí</p>
+            <div class="cajaboton_mensajeAlternativo_iniciarSesion">
+                <button type="submit" id="botonInciarSesion">Iniciar Sesion</button>
+            </div>
+        </article>
+        <!--Mensaje alternativo para registrarse-->
+        <article id="articleid_msgAltModsesion" class="articleclass_mensajeAlternativo">
+            <h1>Bienvenido de nuevo</h1>
+            <p>Si aún no tienes una cuenta, por favor registrate aquí</p>
+            <div class="cajaboton_mensajeAlternativo_registrarse">
+                <button type="submit" id="botonInciarRegistro">Registro</button>
+            </div>
+        </article>
+    </aside>
+<!--------------------------------------------------------------------------------------------->
+	<a href="../html/Soporte.html" class="ayuda">Ayuda</a>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/imagenes/clash.jpg" alt="anashei">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>a</p>
+                <p></p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="icon icon-discord"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Torneos UCT</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+<script src="../java/registroYlogin_script.js"></script>
+<script src="../java/header.js"></script>
+</body>
+<script src="scrpt.js"></script>
+</html>
