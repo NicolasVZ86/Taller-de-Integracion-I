@@ -70,14 +70,14 @@
       <section class="Sugest_bloq">
         <h2 class="sugest-h2">Sugerencias para la página</h2>
 
-        <form action="" class="sugest_form">
+        <form method="POST" action="../php/soporte_sugerencia.php" class="sugest_form">
           <!-- Se tiene Que registrar para Sugerir cambios en la página
                     (Que va a tener el correo en caso de contactarlo)-->
 
           <div>
-            <textarea class="input-text text-area" cols="60" rows="8"></textarea>
+            <textarea name="sugerencia" class="input-text text-area" cols="60" rows="8"></textarea>
           </div>
-          <button type="button">Enviar sugerencia</button>
+          <button type="submit">Enviar sugerencia</button>
         </form>
       </section>
       <section class="Soporte_bloq">
