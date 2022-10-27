@@ -16,7 +16,7 @@ $fecha = $_POST['fecha'];
 $carrera = $_POST['carrera'];
 echo $nombre;
 //Insertamos la informacion a la base de datos
-$sql = "INSERT INTO perfil_usuario(nombre,apellido,usuario,correo,fecha_registro,carrera,contrasena)
+$sql = "INSERT INTO perfil_usuario(nombre,apellido,usuario,correo,fecha_nacimiento,carrera,contrasena)
     VALUES ('$nombre','$apellido','$usuario','$correo','$fecha','$carrera','$contra')";
 $result = $conn->query($sql);
 
