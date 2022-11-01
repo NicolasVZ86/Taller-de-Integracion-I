@@ -160,10 +160,21 @@ footer{
     width: 100%;
     text-align: center;}
 
-#historial{
-    width: 100%;
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
 }
 
-#historial table{
+th , td {
+    padding: 2px ;
+}
+
+#datos{
     width: 100%;
+}
+table{
+    width: 100%;
+}
+.usuario_pie > h2 {
+    margin: 3% 0%;
 }
