@@ -113,13 +113,22 @@ function validarFormulario (validar) {
         break;
     }
 }
+
+function verificar_datos(datosFormulario){
+    fetch('../php/vereficardatos.php', {
+        method: 'POST',
+        body: datosFormulario});
+}
 /* crear cuenta en base de datos */
 async function enviarcuenta(datosFormulario){
 if (puede){
+    if (verificar_datos(formularioData)){
     await fetch('../php/agregarusuario.php', {
         method: 'POST',
         body: datosFormulario
-    });
+    });}else {
+        alert("Su usuario o correo ya esta registrado")
+    }
 }else{
     alert("complete los campos bien")
 }
