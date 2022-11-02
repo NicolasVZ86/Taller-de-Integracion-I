@@ -1,0 +1,128 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	min-height: 110vh;
+	background-color: rgb(1, 0, 30);
+  color: rgb(255, 255, 255);
+}
+header {
+	min-height: 10vh;
+}
+main {
+	min-height: auto;
+}
+article {
+	min-height: inherit;
+}
+.titu {
+	text-align: center;
+}
+.cont-divs {
+	display: grid;
+	background-color: rgba(12, 27, 77, 0.592);
+	border-radius: 3rem;
+	box-shadow: 0 0 8px rgba(176, 224, 230, 0.617);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(16, 3rem);
+	grid-template-areas: 
+	"  .      .     .		"
+	"cj1      .     .		"
+	"cj2      .     .		"
+	"  .   cj9  	  . 	"
+	"  .   cj10		  . 	"
+	"cj3  		.			. 	"
+	"cj4  		.			. 	"
+	"  .      .    cj13	"
+	"	 .  		. 	 cj14	"
+	"cj5  		.			. 	"
+	"cj6		  .			. 	"
+	"  .   cj11			. 	"
+	"  .   cj12			.		"
+	"cj7  		.			. 	"
+	"cj8    	.			. 	"
+	"  .      .     .  	"
+	;
+}
+.cont-nom {
+	width: 80%;
+	margin: 0 auto;
+	min-height: 3rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.num-equ {
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nom-equ {
+	font-size: larger;
+	margin: 0;
+	color: aliceblue;
+	text-align: center;
+	background-color: rgba(17, 55, 58, 0.364);
+	border-radius: 3rem;
+	box-sizing: 0 0 15px rgb(17, 55, 584);
+}
+.cj1 {
+	grid-area: cj1;
+	display: inline-flex;
+}             
+.cj2 {         
+	grid-area: cj2;
+	display: inline-flex;
+}
+.cj3 {
+	grid-area: cj3;
+	display: inline-flex;
+}
+.cj4 {
+	grid-area: cj4;
+	display: inline-flex;
+}
+.cj5 {
+	grid-area: cj5;
+	display: inline-flex;
+}
+.cj6 {
+	grid-area: cj6;
+	display: inline-flex;
+}
+.cj7 {
+	grid-area: cj7;
+	display: inline-flex;
+}
+.cj8 {
+	grid-area: cj8;
+	display: inline-flex;
+}
+.cj9 {
+	grid-area: cj9;
+	display: inline-flex;
+}
+.cj10 {
+	grid-area: cj10;
+	display: inline-flex;
+}
+.cj11 {
+	grid-area: cj11;
+	display: inline-flex;
+}
+.cj12 {
+	grid-area: cj12;
+	display: inline-flex;
+}
+.cj13 {
+	grid-area: cj13;
+	display: inline-flex;
+}
+.cj14 {
+	grid-area: cj14;
+	display: inline-flex;
+}
+footer {
+	max-height: 20vh;
+}
