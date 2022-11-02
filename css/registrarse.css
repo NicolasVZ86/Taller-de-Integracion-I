@@ -7,6 +7,7 @@ body {
     background: url(F.png);
     background-size: cover;
     color: white;
+    background-color: rgb(3, 23, 40);
 
 
 }
@@ -156,6 +157,9 @@ body {
     grid-column-start: 3;
     grid-column-end: 5;
 
+}
+header{
+    height: 150px;
 }
 
 footer {

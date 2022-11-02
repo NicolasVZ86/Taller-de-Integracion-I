@@ -1,48 +1,113 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body {
     background-image: url("../imagenes/fondo-registro.jpg");
-    background-size: 100%;
+    background-size:cover;
     background-repeat: no-repeat;
-
-    color: azure;
+    color: rgb(255, 184, 0);
 }
-
-
-#gridcontenedor_formularios {
+header {
+    grid-area: header;
+    height: 150px;
+}
+#bodygrid_contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "header header header header"
-    "fregistro_login fregistro_login msgAlternativo msgAlternativo"
-    "fregistro_login fregistro_login msgAlternativo msgAlternativo"
+    "ladoizquierdo ladoizquierdo ladoderecho ladoderecho"
+    "ladoizquierdo ladoizquierdo ladoderecho ladoderecho"
     "footer footer footer footer";
+    align-items: center;
 }
-
-
-header {
-    grid-area: header;
-    height: 120px;
+/*estilizando y estructurando a los formularios del main hijo*/
+#mainitem_formularios {
+    grid-area: ladoizquierdo;
+    color: aliceblue;
 }
-
-
-/*MODO REIGSTRO-------------------------------------------------*/ 
-/*--El mennsaje alternativo de registro*/   
-.item1_mensajeAlternativa_iniciarSesion {
-    grid-area: msgAlternativo;
-    justify-self: center;
-    align-self: center;
+/*formulario registro*/
+#article_formularioregistro {
+    background-color: rgba(52, 52, 52, 0.602);
+    padding: 0px;
+    border-radius: 15px;
+    display: block;
+}
+fieldset {
+    border: 3px solid dodgerblue;
+}
+legend {
+    text-justify: center;
+    border: 2px solid rgb(27, 123, 219);
+    padding: 10px;
+    background-color: dodgerblue;
+    text-align: center;
+    border-radius: 10px;
+}
+.classform_formularioPrincipal > fieldset > input {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 99%;
+    letter-spacing: 2px;
+}
+.cajaboton_crearregistro {
+    text-align: center;
+}
+.cajaboton_crearregistro > button {
+    border-radius: 20px;
+    width: 50%;
+    padding-inline: 10px;
+    padding-block: 10px;
+    cursor: pointer;
+}
+.cajaboton_inciarSesion {
+    text-align: center;
+}
+.cajaboton_inciarSesion > input {
+    border-radius: 20px;
+    width: 50%;
+    padding-inline: 10px;
+    padding-block: 10px;
+    cursor: pointer;    
+}
+/*formulario iniciar sesion*/
+#article_formularioiniciarSesion {
     background-color: rgba(52, 52, 52, 0.602);
     padding: 15px;
     border-radius: 15px;
-    width: 60%;
-    text-align: center;
+    display: none;
 }
 
-.boton_iniciarfSesion > button {
+/*ASIDE mensajes alternativos*/
+#asidegrid_mensajeAlternativo {
+    grid-area: ladoderecho;
+    justify-self: center;
+    align-self: center;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+#articleid_msgAltModregistro {
+    display: block;
+}
+.articleclass_mensajeAlternativo {
+    background-color: rgba(52, 52, 52, 0.602);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+#articleid_msgAltModsesion {
+    display: none;
+}
+.cajaboton_mensajeAlternativo_iniciarSesion > button {
     padding: 5px;
     font-weight: bold;
     background-color: dodgerblue;
@@ -55,109 +120,7 @@ header {
     transition: all .3 ease-in;
     color: aliceblue;;
 }
-
-/*--Formulario registro*/
-#item2_contenedor_registro {
-    grid-area: fregistro_login;
-    align-self:center;
-    justify-self: center;
-    background-color: rgba(52, 52, 52, 0.602);
-    padding: 15px;
-    border-radius: 15px;
-    width: 60%;
-}
-
-fieldset {
-    border: 4px solid dodgerblue;
-
-}
-
-legend {
-    text-justify: center;
-    border: 2px solid rgb(27, 123, 219);
-    padding: 10px;
-    background-color: dodgerblue;
-    text-align: center;
-    border-radius: 10px;
-}
-
-#fieldset_registro > input {
-    padding: 5px;
-    border-radius: 5px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 16px;
-    width: 100%;
-    letter-spacing: 2px;
-}
-
-.contenedorboton_CrearCuenta {
-    text-align: center;
-}
-
-.contenedorboton_CrearCuenta > button {
-    border-radius: 20px;
-    width: 50%;
-    padding-inline: 10px;
-    padding-block: 10px;
-    cursor: pointer;
-}
-
-/*MODO INICIO SESION-------------------------------------------------------*/ 
-/*Formulario iniciar sesion*/ 
-#item3_contenedor_iniciarSesion {
-    grid-area: fregistro_login;
-    align-self:center;
-    justify-self: center;
-    background-color: rgba(52, 52, 52, 0.602);
-    padding: 15px;
-    border-radius: 15px;
-    width: 60%;
-    visibility: hidden;
-}
-
-#fieldset_iniciarSesion {
-    padding: 5px;
-    border-radius: 5px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 16px;
-    width: 100%;
-    letter-spacing: 2px;
-}
-
-#fieldset_iniciarSesion > input {
-    padding: 5px;
-    border-radius: 5px;
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 16px;
-    width: 100%;
-    letter-spacing: 2px;
-}
-
-.mensajeAlternativa_registro {
-    grid-area: msgAlternativo;
-    justify-self: center;
-    align-self: center;
-    background-color: rgba(52, 52, 52, 0.602);
-    padding: 15px;
-    border-radius: 15px;
-    width: 60%;
-    text-align: center;
-    visibility: hidden;
-}
-
-.boton_iniciarfRegistro > button {
+.cajaboton_mensajeAlternativo_registrarse > button {
     padding: 5px;
     font-weight: bold;
     background-color: dodgerblue;
@@ -167,13 +130,20 @@ legend {
     cursor: pointer;
     font-size: 16px;
     margin-top: 0px;
-    color: aliceblue;;
+    color: aliceblue;
 }
-
 .pie-pagina {
     grid-area: footer;
 }
-
 #boton {
     display: block;
+}
+
+/*Estilos aplicables a los eventos asociados del formulario*/
+
+.inputerror {
+    background-color: rgb(214, 113, 113);
+}
+.inputcorrecto {
+    background-color: green;
 }
