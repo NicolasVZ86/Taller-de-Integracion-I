@@ -25,6 +25,7 @@ header {
 body {
   min-width: 100vw;
   min-height: 90vh;
+	color: rgb(255, 184, 0);
   background-color: rgb(3, 23, 40);
 }
 
@@ -44,14 +45,14 @@ article {
   min-height: 50vh;
   grid-area: pregfrecu;
   padding: 3rem 3rem;
-  color: rgb(124, 240, 255);
+  /* color: rgb(124, 240, 255); */
 }
 
 .Sugest_bloq {
   min-height: 30vh;
   grid-area: sugest;
   padding: 3rem 3rem;
-  color: rgb(124, 240, 255);
+  /* color: rgb(124, 240, 255); */
   text-align: center;
 }
 
@@ -87,7 +88,7 @@ article {
   min-height: 30vh;
   grid-area: soporte;
   padding: 3rem 3rem;
-  color: rgb(124, 240, 255);
+  /* color: rgb(124, 240, 255); */
 }
 
 .item {
@@ -103,7 +104,8 @@ article {
 
 .button-x {
   background-color: transparent;
-  color: rgb(124, 240, 255);
+  /* color: rgb(124, 240, 255); */
+	color: rgb(255, 184, 0);
   border: 0;
   margin-top: 1.5rem;
   font-weight: 700;
@@ -113,6 +115,7 @@ article {
 footer {
   min-height: 10vh;
 }
- a{
-  color: aqua;
- }
+a{
+  /* color: aqua; */
+	color: rgb(255, 184, 0);
+}
