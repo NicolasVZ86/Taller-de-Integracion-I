@@ -1,83 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("../imagenes/fondo_ftorneo.jpg");
-    color: rgb(255, 184, 0);
+    background-position: center;
 
 }
-header{
+
+header {
     height: 150px;
 }
-main{
-    height: 700px;
-}
-footer{
+
+footer {
     height: 200px;
 }
-h1 {
-    color: #eee;
-    font-size: 32px;
-    text-align: center;
-    -webkit-text-stroke: 1px aqua; 
+
+main {
+    height: 150vh;
 }
-fieldset {
-    border-color:rgb(77, 87, 69);
-    text-align: justify;
-    width: 50%;
-    margin-bottom: 15px;
+
+.contenedor {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:70%;
+    left: 50%;
+    width: 400px;
+    background-color: #f9f9f9;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2),0 6px 18px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+/*estructura de los pasos*/
+.ul_pasos {
+    display: flex;
+    width: 70%;
+    position: relative;
+    top: 30px;
+    list-style: none;
+    justify-content: space-around;
+    margin: auto;
+}
+.line {
+    height: 3px;
+    width: 70px;
+    position: relative;
+    top: 20px;
+    transition: 0.5s ease-in-out;
+}
+ul.ul_pasos li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+#one {
+    background-color: rgb(77, 88, 74);
+    border: 1.5px solid rgb(77, 88, 74);
+    color: white;
+}
+form {
+    position: absolute;
+    top: 120px;
+}
+span {
+    font-size: 20px;
 }
 input {
-    padding: 10px;
-    background-color: #191e2e;
-    border-width: 2px;
-    border-color: #313c60;
-    color: aqua;
-    width: 400px;
+    display: block;
+    margin: 20px 0px;
+    height: 50px;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 17px;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
 }
-input::placeholder {
-    color: aqua;
+form select {
+    display: block;
+    margin: 20px 0px;
+    height: 50px;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 17px;
+    outline: none;
+    background: transparent;
 }
-select {
-    padding: 10px;
-    background-color: #191e2e;
-    border-width: 2px;
-    border-color: #313c60;
-    color:aqua;
-    width: 400px;
-    margin-bottom: 5px;
+
+form .button {
+    display: flex;
+    width: 100%;
+    margin: 30px auto;
+    justify-content: center;
 }
-textarea {
-    resize: none;
-    background-color: #191e2e;
-    color: aqua;
-    width: 400px;
-}
-.sgte_paso, .atras_paso {
-    padding: 5px;
-    letter-spacing: 2px;
-    border-color: aqua;
-    background-color: rgb(21, 53, 77);
-    color: aqua;
+form button{
+    margin: 0px 5px;
+    padding: 10px 20px;
+    height: 40px;
+    width: 120px;
     cursor: pointer;
+    background-color: rgb(77, 88, 74);
+    border: none;
+    font-size: 15px;
+    color: white;
+    outline: none;
 }
-
-.botonCreartorneo {
-    padding-top: 10px;
+#next{
+    width: 100%;
 }
-
-.botonCreartorneo input {
-    padding: 10px;
-    letter-spacing: 5px;
-    border-color: aqua;
-    background-color: rgb(21, 53, 77);
-    color: aqua;
-    cursor: pointer;
-
+#form1{
+    left: 70px;
+    transition: 0.5s ease-in-out;
 }
-
-.pie-pagina {
-    grid-area: footer;
+#form2{
+    left: 500px;
+    transition: 0.5s ease-in-out;
 }
-
-#visual_pasos ul li {
-    display: inline;
-    margin-left: 10px;
+#form3{
+    left: 1000px;
+    transition: 0.5s ease-in-out;
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+    margin-top:90px;
 }
