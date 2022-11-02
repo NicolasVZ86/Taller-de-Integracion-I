@@ -125,8 +125,9 @@ if (puede){
     if (verificar_datos(formularioData)){
     await fetch('../php/agregarusuario.php', {
         method: 'POST',
-        body: datosFormulario
-    });}else {
+        body: datosFormulario});
+    alert ("usuario creado exitosamente");
+    }else {
         alert("Su usuario o correo ya esta registrado")
     }
 }else{
@@ -156,10 +157,41 @@ form_sesion.addEventListener("submit", (hacer) => {
 })
 
 function enviarSesion() {
+    const p = true; 
     if(usuario_sesion.value === null || usuario_sesion.value === ""){
         error_sesion.innerHTML = "Debes ingresar tu nombre de usuario";
+        p = false ;
     }
     if(contrasena_sesion.value === null || contrasena_sesion.value === ""){
         error_sesion.innerHTML = "Debes ingresar tu contraseña";
+        p = false;
     }
+    return p;
 }
+
+
+/*----------------------- inicio secion --------------------*/
+
+
+async function iniciosecion(datos){
+    if (enviarSesion()){
+        await fetch('../php/login.php', {
+            method: 'POST',
+            body: datos});
+        alert ("usuario creado exitosamente");
+        }else {
+            alert("Su usuario o correo ya esta registrado")
+        }
+    }
+
+    document
+    .getElementById('formulario_iniciarSesion')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+        const formulario = document.getElementById('formulario_iniciarSesion');
+        const formularioData = new FormData(formulario);
+        o = iniciosecion(formularioData);
+        alert (o);
+        });
+
+/* ------------------------------------------------------- */
