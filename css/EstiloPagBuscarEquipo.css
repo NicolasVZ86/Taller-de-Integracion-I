@@ -140,19 +140,44 @@ main {
 
 #inputenvi {
     margin: 5%;
+    border: 1px solid #2e518b;
+    padding: 10px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px;
 }
 
 #botonzito {
-    width: 6%;
+    width: 5%;
     margin: 5%;
+    border: 1px solid #2e518b;
+    padding: 10px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px;
 }
 
 #mensaje1 {
-    width: 6%;
+    width: 5%;
     margin: 5%;
+
 }
 
 #botonzito2 {
-    width: 6%;
+    width: 5%;
     margin: 5%;
+    border: 1px solid #2e518b;
+    padding: 10px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px;
 }
