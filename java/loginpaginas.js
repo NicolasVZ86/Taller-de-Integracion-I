@@ -8,4 +8,8 @@ async function logeado(pagina){
     }
 }  
 async function cerses(){
-    await fetch('../php/cerrrarsesion.php');}
+    await fetch('../php/cerrrarsesion.php');
+    location.href = "../html/registroYlogin.html"
+    alert("Secion cerrada");
+}
+
