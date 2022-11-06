@@ -1,8 +1,9 @@
 <?php
 $usuario = $_POST['sesion_username'];
-$contrsena = $_POST['sesion_password'];
+$contrsena = md5($_POST['sesion_password']);
 session_start();
 $_SESSION['usuario']=$usuario;
+
 
 //creamos conexion
 $conn = mysqli_connect("db.inf.uct.cl","A2022_nvalenzuela","A2022_nvalenzuela","A2022_nvalenzuela");
@@ -24,8 +25,12 @@ $resultado = mysqli_query($conn,$sql);
 
 $filas = mysqli_num_rows($resultado);
 
+$salida = array("status" => "");
+
+
 if($filas){
-    return $ss;
+    $salida['status']=$ss;
 }else{
-    return $sn;
+    $salida['status']=$sn;
 }
+exit (json_encode($salida));

@@ -114,15 +114,24 @@ function validarFormulario (validar) {
     }
 }
 
-function verificar_datos(datosFormulario){
-    fetch('../php/vereficardatos.php', {
+async function verificar_datos(datosFormulario){
+    const i = await fetch('../php/vereficardatos.php', {
         method: 'POST',
         body: datosFormulario});
+    const io = await i.json();
+    if (io.status == "si"){
+        return true
+    }
+    else{
+        return false
+    }
+    
 }
 /* crear cuenta en base de datos */
 async function enviarcuenta(datosFormulario){
 if (puede){
-    if (verificar_datos(formularioData)){
+    i =await verificar_datos(datosFormulario)
+    if (i){
     await fetch('../php/agregarusuario.php', {
         method: 'POST',
         body: datosFormulario});
@@ -174,24 +183,20 @@ function enviarSesion() {
 
 
 async function iniciosecion(datos){
-    if (enviarSesion()){
-        await fetch('../php/login.php', {
+        const men = await fetch('../php/login.php', {
             method: 'POST',
             body: datos});
-        alert ("usuario creado exitosamente");
-        }else {
-            alert("Su usuario o correo ya esta registrado")
-        }
-    }
-
+        const mensaje = await men.json();
+        alert(mensaje.status)
+}
     document
     .getElementById('formulario_iniciarSesion')
     .addEventListener('submit', function (event) {
         event.preventDefault();
         const formulario = document.getElementById('formulario_iniciarSesion');
         const formularioData = new FormData(formulario);
-        o = iniciosecion(formularioData);
-        alert (o);
+        iniciosecion(formularioData);
         });
+
 
 /* ------------------------------------------------------- */
