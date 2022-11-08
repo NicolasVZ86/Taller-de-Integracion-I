@@ -1,29 +1,18 @@
 /*fondo de pantalla y cambio de color de letras con estilo de grid a la pagina */
 body{
     background-color: rgb(3, 23, 40);
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: 300px 700px 300px ;
-    grid-template-rows: 100px 700px 100px;
-    justify-content: center;
-
-    grid-template-areas: 
-    "header header header"
-    "formulario formulario formulario"
-    "footer footer footer";
-    text-align: center;
+    color: aliceblue
 }
 header{
     height: 150px;
-    grid-area: header;
+
 }
 footer{
     height: 100px;
-    grid-area: footer;
 }
 main{
+
     text-align: center;
-    grid-area: formulario;
 }
 /* Cambiamos los estilos de el h1,input,spany textarea */
 h1{

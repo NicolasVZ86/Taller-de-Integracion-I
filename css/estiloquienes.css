@@ -20,7 +20,16 @@ main div{
     text-align: center;
 }
 /*Darle tamaño a los div 1 y 2 elegir su tamaño de letra y alinearlos con linea tambien definirles margenes*/
-#diveq1 , #diveq2{
+#diveq1 {
+    height: 40%;
+    width: 40%;
+    font-size: 15px;
+    display:inline-table;
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#diveq2{
     height: 40%;
     width: 40%;
     font-size: 15px;

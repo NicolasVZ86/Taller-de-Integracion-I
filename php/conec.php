@@ -1,5 +1,5 @@
 <?php
 
-$conex = mysqli_connect("db.inf.uct.cl","nvalenzuela","nvalenzuela","2022_nvalenzuela");
+$conex = mysqli_connect("db.inf.uct.cl","A2022_nvalenzuela","A2022_nvalenzuela","A2022_nvalenzuela");
 
 ?>
