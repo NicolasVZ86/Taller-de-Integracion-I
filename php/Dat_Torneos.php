@@ -1,32 +1,37 @@
 <?php
-
-require './cp.php';
+$servername = "db.inf.uct.cl";
+$username = "A2022_nvalenzuela";
+$password = "A2022_nvalenzuela";
+$dbname = "A2022_nvalenzuela";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
 $salida = "";
-$query ="SELECT * FROM torneo ";
-
+$query ="SELECT * FROM torneo  ORDER BY `id-torn` DESC";
 $resultado = $conn->query($query);
+
 if ($resultado->num_rows > 0) {
     $salida .="
     <table>
     <thead>
-        <th>Id Torneo</th>
-        <th>Nombre Torneo</th>
-        <th>Juego o deporte</th>
+        <th>id_Torneo</th>
+        <th>Nombre torneo</th>
+        <th>id Juego</th>
         <th>Cantidad de llaves</th>
+        <th>Tipo Torneo</th>
     </thead>
     <tbody>";
     while ($fila = $resultado->fetch_assoc()) {
         $salida .= "<tr>
-        <td>" . $fila['Id_Torneo'] . "</td>
-        <td>" . $fila['N_torneo'] . "</td>
-        <td>" . $fila['N_jue_dep'] . "</td>
-        <td>" . $fila['Cant_llaves'] . "</td>
+        <td>" . $fila['id-torn'] . "</td>
+        <td>" . $fila['nom-torn'] . "</td>
+        <td>" . $fila['id-juego'] . "</td>
+        <td>" . $fila['cant-llav'] . "</td>
+        <td>" . $fila['tipo-torneo'] . "</td>
         </tr>";
     }
     $salida .= "</tbody></table>";
@@ -34,4 +39,5 @@ if ($resultado->num_rows > 0) {
     $salida .= "No hay datos";
 }
 echo $salida;
+
 ?>
