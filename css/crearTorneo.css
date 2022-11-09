@@ -1,106 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("../imagenes/fondo_ftorneo.jpg");
-    background-color: rgb(3, 23, 40);
+    background-position: center;
 
 }
 
-header{
+header {
     height: 150px;
 }
-main{
-    height: 700px;
-}
-footer{
+
+footer {
     height: 200px;
 }
 
-#contenedorGrid_creartorneo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 1fr 1fr 1vh;
-
-    grid-template-areas: 
-    "header header header header"
-    ". ftorneo ftorneo ."
-    ". ftorneo ftorneo ."
-    "footer footer footer footer";
-
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+main {
+    height: 150vh;
 }
 
-.item1Grid_creartorneo {
-    grid-area: ftorneo;
+.contenedor {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:70%;
+    left: 50%;
+    width: 400px;
+    background-color: #f9f9f9;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2),0 6px 18px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+/*estructura de los pasos*/
+.ul_pasos {
+    display: flex;
+    width: 70%;
+    position: relative;
+    top: 30px;
+    list-style: none;
+    justify-content: space-around;
+    margin: auto;
+}
+.line {
+    height: 3px;
+    width: 70px;
+    position: relative;
+    top: 20px;
+    transition: 0.5s ease-in-out;
+}
+ul.ul_pasos li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+#one {
+    background-color: rgb(77, 88, 74);
+    border: 1.5px solid rgb(77, 88, 74);
+    color: white;
+}
+form {
+    position: absolute;
+    top: 120px;
+}
+span {
+    font-size: 20px;
+}
+input {
+    display: block;
+    margin: 20px 0px;
+    height: 50px;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 17px;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+}
+form select {
+    display: block;
+    margin: 20px 0px;
+    height: 50px;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 17px;
+    outline: none;
+    background: transparent;
 }
 
-#contenedorGrid_formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-
-    grid-template-areas: 
-    "fleft fright";
-
-    background-color:rgb(21, 53, 77, 0.25);
-    font-size: 16px;
+form .button {
+    display: flex;
     width: 100%;
-    color: #eee;
+    margin: 30px auto;
+    justify-content: center;
 }
-
-h1 {
-    color: #eee;
-    font-size: 32px;
-    text-align: center;
-    -webkit-text-stroke: 1px aqua; 
-}
-
-fieldset {
-    border-color:rgb(77, 87, 69);
-}
-
-.item1Gridleft_formulario {
-    grid-area: fleft;
-}
-
-.item2Girdright_formulario {
-    grid-area: fright;
-}
-
-label > input {
-    padding: 10px;
-    background-color: #191e2e;
-    border-width: 2px;
-    border-color: #313c60;
-    color: aqua;
-}
-
-input::placeholder {
-    color: aqua;
-}
-
-label > select {
-    padding: 10px;
-    background-color: #191e2e;
-    border-width: 2px;
-    border-color: #313c60;
-    color:aqua
-}
-
-.pie-pagina {
-    grid-area: footer;
-}
-
-.botonCreartorneo {
-    text-align: center;
-    padding-top: 10px;
-    
-}
-
-.botonCreartorneo input {
-    padding: 10px;
-    letter-spacing: 5px;
-    border-color: aqua;
-    background-color: rgb(21, 53, 77);
-    color: aqua;
+form button{
+    margin: 0px 5px;
+    padding: 10px 20px;
+    height: 40px;
+    width: 120px;
     cursor: pointer;
+    background-color: rgb(77, 88, 74);
+    border: none;
+    font-size: 15px;
+    color: white;
+    outline: none;
 }
-
+#next{
+    width: 100%;
+}
+#form1{
+    left: 70px;
+    transition: 0.5s ease-in-out;
+}
+#form2{
+    left: 500px;
+    transition: 0.5s ease-in-out;
+}
+#form3{
+    left: 1000px;
+    transition: 0.5s ease-in-out;
+}
+h1{
+    font-size: 35px;
+    text-align: center;
+    margin-top:90px;
+}

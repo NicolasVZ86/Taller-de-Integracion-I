@@ -11,12 +11,12 @@ $respuesta = mysqli_query($bd,"CALL insertar_sugerencia('$sugerencia')");
 
 
 if($respuesta){
-echo "<script> alert('correcto');
+echo "<script> alert('Correcto!');
 location.href='../html/Soporte.html';
 </script>";
 
 }else{
-echo "<script> alert('incorrecto');
+echo "<script> alert('Incorrecto!');
 location.href='../html/Soporte.html';
 </script>";
 }
