@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="../css/estiloforRegEqui.css"> 
+    <link rel="stylesheet" href="../css/estiloforRegEqui.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de registro de equipo</title>
+    <link rel="stylesheet" href="../css/botonayuda.css">
     <link rel="stylesheet" href="../css/style_footer.css">
     <link rel="stylesheet" href="../css/estiloheader.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="link_1">
     <header>
         <div id="logo">
@@ -18,74 +21,61 @@
             <h1>Torneos UCT</h1>
         </div>
         <div id="header">
-			<ul class="nav">
-				<li><a href="../html/Home.html">Inicio</a></li>
-				<li><a href="../html/Torneos.html">Torneos</a>
-					<ul>
-						<li><a href="../html/crearTorneo.html">Creacion de torneos</a></li>
-						<li><a href="../html/Torneos.html">Torneos disponibles</a></li>
-					</ul>
-				</li>
+            <ul class="nav">
+                <li><a href="../html/Home.html">Inicio</a></li>
+                <li><a href="../html/Torneos.html">Torneos</a>
+                    <ul>
+                        <li><a href="../html/crearTorneo.html">Creacion de torneos</a></li>
+                        <li><a href="../html/Torneos.html">Torneos disponibles</a></li>
+                    </ul>
+                </li>
                 <li><a href="../html/PagBusEquipo.html">Equipos</a>
-					<ul>
-						<li><a href="../html/forRegEqui.html">Creacion de Equipos</a></li>
-						<li><a href="../html/PagBusEquipo.html">Busqueda de equipo</a></li>
-					</ul>
-				</li>
-				<li><a href="../html/Soporte.html">Soporte</a></li>
+                    <ul>
+                        <li><a href="../html/forRegEqui.html">Creacion de Equipos</a></li>
+                        <li><a href="../html/PagBusEquipo.html">Busqueda de equipo</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/Soporte.html">Soporte</a></li>
                 <li><a href="../html/Perfil.html">Perfil</a>
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
                     </ul>
                 </li>
                 <li><a href="../html/quienes_somos.html">Quienes somos</a></li>
-			</ul>
-		</div>
+            </ul>
+        </div>
     </header>
-    <main>       
+    <main>
         <h1>Registro de equipos</h1>
-        <form action="">
-            <label >
+        <form method="POST" action="../php/creacion_equipo.php">
+            <label>
                 <span>¿Nombre del equipo?</span>
-                <input 
-                type="text" 
-                maxlength="30" minlength="10"
-                placeholder="Maximo de caracteres 30"
-                required>
+                <input type="text" name="Nombre_Equipo" maxlength="30" minlength="10"
+                    placeholder="Maximo de caracteres 30" required>
             </label>
             <br>
-            <label >
+            <label>
                 <span>¿Correo del equipo?</span>
-                <input 
-                type="email" 
-                placeholder="Ingrese correo porfavor"
-                required>
+                <input type="email" name="email" placeholder="Ingrese correo porfavor" required>
             </label>
             <br>
             <label>
                 <span>¿Descripcion? :</span>
-                <textarea 
-                type="text"
-                maxlength="300" minlength="30"
-                placeholder="Maximo 300 caracteres"
-                required></textarea>
+                <textarea type="text" name="Descripcion" maxlength="300" minlength="30"
+                    placeholder="Maximo 300 caracteres" required></textarea>
             </label>
             <br>
             <div class="comentarios">
-            <label >
-                <span id="pru">Lema del equipo : </span>
-                <textarea 
-                type="text" 
-                maxlength="150" minlength="10"
-                placeholder="maximo 150 caracteres"
-                required></textarea>
-            </label>
+                <label>
+                    <span id="pru">Lema del equipo : </span>
+                    <textarea type="text" name="lema" maxlength="150" minlength="10" placeholder="maximo 150 caracteres"
+                        required></textarea>
+                </label>
             </div>
             <br>
             <div>
-            <span>¿Juego / deporte en que participara el equipo?</span> 
-            <input list="juegos" required 
-            placeholder="Elija 1 juego / deporte">
+                <span>¿Juego / deporte en que participara el equipo?</span>
+                <input list="juegos" name="Elejir_juego" required placeholder="Elija 1 juego / deporte">
             </div>
             <datalist id="juegos">
                 <option value="League of Legends"></option>
@@ -97,9 +87,10 @@
             <br>
             <br>
             <br>
-            <input type="submit" id="inputenvi">
+            <button id="inputenvi" type="submit">Registrar Equipo</button>
         </form>
     </main>
+    <a href="../html/Soporte.html" class="ayuda">Ayuda</a>
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
@@ -117,7 +108,7 @@
             <div class="box">
                 <h2>SIGUENOS</h2>
                 <div class="red-social">
-                    
+
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="icon icon-discord"></a>
                     <a href="#" class="fa fa-instagram"></a>
