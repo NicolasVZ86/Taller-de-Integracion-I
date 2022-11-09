@@ -10,12 +10,27 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$nombreTorneo=$_POST['nombreTorneo'];
-$selectGame=$_POST['selectGame'];
-$selectLlaves=$_POST['selectLlaves'];
-$Modjuego=$_POST['Modjuego'];
+$nombreTorneo=$_POST['nom'];
+$selectGame=$_POST['game'];
+$selectLlaves=$_POST['llaves'];
+$Modjuego=$_POST['Modo_juego'];
+$dateTorneo=$_POST['fecha'];
 
+echo "Hola ".$nombreTorneo." ".$selectGame." ".$selectLlaves." ".$Modjuego."            ".$dateTorneo;
 
-echo "Hola ".$nombreTorneo." ".$selectGame." ".$selectLlaves." ".$Modjuego;
+$query ="INSERT INTO torneo(
+    nom_torn,
+    id_juego,
+    cant_llav,
+    tipo_torneo
+) VALUES ('$nombreTorneo',$selectGame,$selectLlaves,'$Modjuego')";
+if($conn->query($query)===true){
+    echo "".$nombreTorneo." ".$selectGame." ".$selectLlaves." ".$Modjuego." ".$dateTorneo;
+}else{
+    die("Error al insertar datos: " . $conn->error);
+}
+
+$conn->close();
+
 
 ?>

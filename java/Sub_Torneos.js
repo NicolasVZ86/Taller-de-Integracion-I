@@ -1,13 +1,13 @@
 $('#boton').click(function(){
     var nombre=document.getElementById("nombreTorneo").value;
-    var Game=document.getElementById("selectgame").value;
-    var llaves=document.getElementById("selectLLaves").values;
-    var Modo_juego=document.getElementById("Modjuego").values;
-    var fecha=document.getElementById("datetorneo")
+    var Game=document.getElementById("selectGame").value;
+    var llaves=document.getElementById("selectLlaves").value;
+    var Modo_juego=document.getElementById("Modjuego").value;
+    var fecha=document.getElementById("dateTorneo").value;
 
-    var ruta="nom="+nombre+"&game="+Game+"&llaves"+llaves+"&Modo_juego"+Modo_juego+"&fecha"+fecha;
+    var ruta="nom="+nombre+"&game="+Game+"&llaves="+llaves+"&Modo_juego="+Modo_juego+"&fecha="+fecha;
     $.ajax({
-        url:"../php/Sub_torneos.php",
+        url:"../php/Sub_Torneos.php",
         type: "POST",
         data: ruta,
     })
