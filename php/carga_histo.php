@@ -7,10 +7,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
+session_start();
+$usuario = $_SESSION['usuario'];
 
 $salida = "";
-$query ="SELECT id_historial_usuario,nombre_partida,duracion,id_usuario,id_torn,id_partida FROM historial_usuario  ORDER BY `historial_usuario`.`id_historial_usuario` DESC";
+$query ="SELECT id_historial_usuario,nombre_partida,duracion,id_usuario,id_torn,id_partida FROM historial_usuario WHERE id_usuario = (SELECT id_usuario FROM perfil_usuario WHERE usuario = '$usuario') " ;
 
 
 
