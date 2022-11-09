@@ -6,7 +6,7 @@
 body {
 	min-height: 110vh;
 	background-color: rgb(3, 23, 40);
-  color: rgb(255, 255, 255);
+	color: rgb(255, 184, 0);
 }
 header {
 	height: 150px;
@@ -19,6 +19,8 @@ article {
 	min-height: inherit;
 }
 .titu {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 	text-align: center;
 }
 .cont-divs {
@@ -64,7 +66,6 @@ article {
 .nom-equ {
 	font-size: larger;
 	margin: 0;
-	color: aliceblue;
 	text-align: center;
 	background-color: rgba(17, 55, 58, 0.364);
 	border-radius: 3rem;
