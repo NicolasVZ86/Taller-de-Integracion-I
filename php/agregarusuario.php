@@ -11,7 +11,7 @@ $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $usuario = $_POST['usuario'];
 $correo = $_POST['correo'];
-$contra = password_hash($_POST['contrasena'],PASSWORD_BCRYPT);
+$contra = $_POST['contrasena'];
 $fecha = $_POST['fecha'];
 $carrera = $_POST['carrera'];
 echo $nombre;

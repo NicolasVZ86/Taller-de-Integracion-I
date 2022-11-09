@@ -1,12 +1,15 @@
-html {
+:root {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
   min-height: 100vh;
   min-width: 100vw;
-	margin: 0;
+  background-color: rgb(3, 23, 40);
 }
 header {
+	height: 150px;
 	min-height: 10vh;
 }
 main {

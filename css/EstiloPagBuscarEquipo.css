@@ -1,62 +1,53 @@
 /* Definicion de bloques de la pagina  */
-body {
-    color: rgb(227, 227, 226);
+body{
+    color : rgb(227, 227, 226);
     background-color: rgb(3, 23, 40);
 }
-
-header {
+header{
     height: 150px;
 }
-
-main {
+main{
     height: 800px;
     width: 80%;
     margin-inline: 10%;
 }
-
 /* barra para buscar equipos por nombre o por juego */
-#principio {
+#principio{
     background-color: rgba(5, 29, 101, 0.386);
     height: 50px;
     display: block;
     border-radius: 20px;
 }
-
-#principio>div {
+#principio > div {
     display: inline-block;
     padding-inline: center;
 }
-
-#arriba1 {
+#arriba1{
     width: 300px;
     height: 40px;
     margin: 3px;
 }
-
-#arriba2 {
+#arriba2{
     width: 300px;
     height: 40px;
     float: right;
     margin: 3px;
 }
-
-#arriba1>form>input {
+#arriba1>form>input{
     display: inline-block;
     font-size: 18px;
     margin-top: 7px;
     margin-inline: 3px;
 }
-
-#arriba2>form>input {
+#arriba2>form>input{
     display: inline-block;
     font-size: 18px;
     margin-top: 7px;
     margin-inline: 20%;
     text-align: center;
 }
-
 /* Bloque central conde se encuentran los bloques de cada equipo */
-#principal {
+#principal{
     display: block;
     background-color: rgba(137, 43, 226, 0.186);
     width: 100%;
@@ -66,118 +57,61 @@ main {
 }
 
 /* Bloques de las targetas de los equipos */
-.BloqueDeEquipo {
+.BloqueDeEquipo{
     display: inline-block;
     position: relative;
     width: 30%;
     background-color: rgba(10, 29, 158, 0.15);
-    height: 43%;
+    height: 43% ;
     margin: 2% 1.5%;
     box-shadow: 3px 3px 30px 5px black;
     border-radius: 10px;
 }
-
-.BloqueDeEquipo>* {
-    position: absolute;
+.BloqueDeEquipo>*{
+    position:absolute;
 }
-
 /* Ajustes de cada elemnto de los bloques de los equipos como pocicions y detalles */
-.BloqueDeEquipo>p {
+.BloqueDeEquipo>p{
     top: 70%;
     height: 30% !important;
     width: 100% !important;
     overflow: auto;
     left: 2px;
     resize: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0,0,0,0.3);
 
 }
-
-.BloqueDeEquipo>img {
-    height: 50%;
+.BloqueDeEquipo>img{
+    height: 50% ;
     width: 46%;
     top: 0;
     margin: 2%
 }
-
-.BloqueDeEquipo>h2 {
+.BloqueDeEquipo>h2{
     right: 0;
-    margin: 3%;
+    margin:3%;
     display: block;
     width: 45%;
     height: 30%;
     -webkit-text-stroke: 1px black;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;    
     text-transform: capitalize;
 }
-
-.BloqueDeEquipo>ol {
+.BloqueDeEquipo>ol{
     list-style: none;
     top: 53%;
     width: 100%;
     left: 2px;
     margin: 1px;
 }
-
-.BloqueDeEquipo li {
+.BloqueDeEquipo li{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
     margin: 1px;
 }
-
 /* Ajuste del imput de la bara de busqueda por filtro de nombre de equipo */
-#busqueda {
+#busqueda{
     border: none;
     outline-offset: 1px;
-}
-
-.lol {
-    display: flex;
-    margin-left: 15%;
-
-}
-
-#inputenvi {
-    margin: 5%;
-    border: 1px solid #2e518b;
-    padding: 10px;
-    background-color: #2e518b;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Helvetica', sans-serif;
-    border-radius: 50px;
-}
-
-#botonzito {
-    width: 5%;
-    margin: 5%;
-    border: 1px solid #2e518b;
-    padding: 10px;
-    background-color: #2e518b;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Helvetica', sans-serif;
-    border-radius: 50px;
-}
-
-#mensaje1 {
-    width: 5%;
-    margin: 5%;
-
-}
-
-#botonzito2 {
-    width: 5%;
-    margin: 5%;
-    border: 1px solid #2e518b;
-    padding: 10px;
-    background-color: #2e518b;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Helvetica', sans-serif;
-    border-radius: 50px;
 }
