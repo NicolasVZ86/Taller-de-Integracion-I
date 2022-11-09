@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 $salida = "";
-$query ="SELECT * FROM torneo  ORDER BY `id-torn` DESC";
+$query ="SELECT * FROM torneo  ORDER BY `id_torn` ASC";
 $resultado = $conn->query($query);
 
 if ($resultado->num_rows > 0) {
@@ -27,11 +27,11 @@ if ($resultado->num_rows > 0) {
     <tbody>";
     while ($fila = $resultado->fetch_assoc()) {
         $salida .= "<tr>
-        <td>" . $fila['id-torn'] . "</td>
-        <td>" . $fila['nom-torn'] . "</td>
-        <td>" . $fila['id-juego'] . "</td>
-        <td>" . $fila['cant-llav'] . "</td>
-        <td>" . $fila['tipo-torneo'] . "</td>
+        <td>" . $fila['id_torn'] . "</td>
+        <td>" . $fila['nom_torn'] . "</td>
+        <td>" . $fila['id_juego'] . "</td>
+        <td>" . $fila['cant_llav'] . "</td>
+        <td>" . $fila['tipo_torneo'] . "</td>
         </tr>";
     }
     $salida .= "</tbody></table>";
