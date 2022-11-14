@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/botonayuda.css">	
+    <link rel="stylesheet" href="../css/botonayuda.css">
     <link rel="stylesheet" href="../css/style_footer.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/normalize.css">
@@ -16,6 +16,10 @@
     <title>Pagina torneos</title>
     <link rel="shortcut icon" href="logo.webp">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body class="link_1">
@@ -27,29 +31,29 @@
             <h1>Torneos UCT</h1>
         </div>
         <div id="header">
-			<ul class="nav">
-				<li><a href="../html/Home.html">Inicio</a></li>
-				<li><a href="../html/Torneos.html">Torneos</a>
-					<ul>
-						<li><a href="../html/crearTorneo.html">Creacion de torneos</a></li>
-						<li><a href="../html/Torneos.html">Torneos disponibles</a></li>
-					</ul>
-				</li>
+            <ul class="nav">
+                <li><a href="../html/Home.html">Inicio</a></li>
+                <li><a href="../html/Torneos.html">Torneos</a>
+                    <ul>
+                        <li><a href="../html/crearTorneo.html">Creacion de torneos</a></li>
+                        <li><a href="../html/Torneos.html">Torneos disponibles</a></li>
+                    </ul>
+                </li>
                 <li><a href="../html/PagBusEquipo.html">Equipos</a>
-					<ul>
-						<li><a href="../html/forRegEqui.html">Creacion de Equipos</a></li>
-						<li><a href="../html/PagBusEquipo.html">Busqueda de equipo</a></li>
-					</ul>
-				</li>
-				<li><a href="../html/Soporte.html">Soporte</a></li>
+                    <ul>
+                        <li><a href="../html/forRegEqui.html">Creacion de Equipos</a></li>
+                        <li><a href="../html/PagBusEquipo.html">Busqueda de equipo</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/Soporte.html">Soporte</a></li>
                 <li><a href="../html/Perfil.html">Perfil</a>
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
                     </ul>
                 </li>
                 <li><a href="../html/quienes_somos.html">Quienes somos</a></li>
-			</ul>
-		</div>
+            </ul>
+        </div>
     </header>
 
     <!--______________________-->
@@ -65,12 +69,14 @@
             <div id="juegodeportes">
                 <p data-aos="zoom-in">Pagina para crear torneos de videojuegos o deportes</p>
                 <h2 data-aos="zoom-in">Juegos / Deportes</h2>
+                <h2 id="ver">Presione en las imagenes si quiere saber mas informacion de
+                    cada 1 </h2>
                 <div>
 
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/lolcitoincio.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="lol">
                                 <h3> Lol</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -82,7 +88,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src="../imagenes/csgo_game.jpg" alt="no" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="csgo">
                                 <h3> Csgo</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -94,7 +100,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src="../imagenes/Basketball_image.webp" alt="no" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="basquet">
                                 <h3> Basquet</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -106,7 +112,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src="../imagenes/futbol_image.jpg" alt="no" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="futbol">
                                 <h3> Futbol</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -118,7 +124,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src="../imagenes/fifa.jpg" alt="no" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="fifa">
                                 <h3> FIFA 22</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -130,7 +136,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/Warzone.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="warzone">
                                 <h3> Call of duty Warzone</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -142,7 +148,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/Tenis.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="tenis">
                                 <h3> Tenis</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -154,7 +160,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/Correr.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="atletismo">
                                 <h3> Atletismo</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -166,7 +172,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/overwatch.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="overwach">
                                 <h3> Overwatch 2</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -178,7 +184,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/rainbow six.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="rain">
                                 <h3> Rainbow-Six</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -190,7 +196,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/golf.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="golf">
                                 <h3> Golf</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -202,7 +208,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/boxeo.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="boxeo">
                                 <h3> Boxeo</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -214,7 +220,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/rocket league.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="rocket">
                                 <h3> Rocket League</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -226,7 +232,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/pugb.webp' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="pubg">
                                 <h3> Pubg </h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -238,7 +244,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/Futbol americano.webp' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="americano">
                                 <h3> Futbol americano</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -250,7 +256,7 @@
                     <div class="imagenesdejuegos">
                         <figure data-aos="fade-up">
                             <img src='../imagenes/voleibol.jpg' alt="no esta" width="250px" height="350px">
-                            <div class="animacion">
+                            <div class="animacion" id="voley">
                                 <h3> Voleibol</h3>
                                 <p>lolololloldslldslsdlsdlds
                                     sdkdkskdsksdksdksdkksdkds
@@ -300,7 +306,7 @@
             </div>
         </article>
     </main>
-    <a href="../html/Soporte.html" class="ayuda">Ayuda</a>		    
+    <a href="../html/Soporte.html" class="ayuda">Ayuda</a>
     <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
@@ -337,5 +343,6 @@
     </script>
 </body>
 <script src="../java/header.js"></script>
+<script src="../java/alerta_juegos.js"></script>
 
 </html>
