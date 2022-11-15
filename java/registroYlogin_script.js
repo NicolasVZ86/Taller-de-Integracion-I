@@ -38,7 +38,6 @@ const form = document.getElementById("idform_formularioregistro");
 const inputs = document.querySelectorAll("#idform_formularioregistro input");
 
 
-<<<<<<< HEAD
 
 var puede = false
 
@@ -46,12 +45,6 @@ form.addEventListener("submit", (hacer) => {
     hacer.preventDefault();
 })
 
-=======
-form.addEventListener("submit", (hacer) => {
-    hacer.preventDefault();
-})
-
->>>>>>> benjaminespinoza
 //Identifica a cada input por su atributo 'name'
 inputs.forEach((input) => {
     input.addEventListener("keyup", validarFormulario);
@@ -65,10 +58,7 @@ function validarFormulario (validar) {
             if(expresiones.nombre.test(validar.target.value)){
                 document.getElementById("nombre_error").innerHTML = "Es válido!";
                 document.getElementById("nombre_error").classList.add("inputcorrecto");
-<<<<<<< HEAD
                 puede = true
-=======
->>>>>>> benjaminespinoza
             } else {
                 //Lo que pasará cuando el input es incorrecto
                 document.getElementById("nombre_error").innerHTML = "No puede contener letras, números ni guion";
@@ -80,10 +70,7 @@ function validarFormulario (validar) {
             if (expresiones.nombre.test(validar.target.value)){
                 document.getElementById("apellido_error").innerHTML = "Es válido!" ;
                 document.getElementById("apellido_error").classList.add("inputcorrecto");
-<<<<<<< HEAD
                 puede = true
-=======
->>>>>>> benjaminespinoza
             } else {
                 document.getElementById("apellido_error").innerHTML = "No puede contener letras, números ni guion";
                 document.getElementById("apellido_error").classList.remove("inputcorrecto");
@@ -94,10 +81,7 @@ function validarFormulario (validar) {
             if (expresiones.correo.test(validar.target.value)){
                 document.getElementById("correo_error").innerHTML = "Es válido!";
                 document.getElementById("correo_error").classList.add("inputcorrecto");
-<<<<<<< HEAD
                 puede = true
-=======
->>>>>>> benjaminespinoza
             } else {
                 document.getElementById("correo_error").innerHTML = "Ingrese un correo válido";
                 document.getElementById("correo_error").classList.remove("inputcorrecto");
@@ -108,7 +92,6 @@ function validarFormulario (validar) {
             if (expresiones.usuario.test(validar.target.value)){
                 document.getElementById("usuario_error").innerHTML = "Es valido!";
                 document.getElementById("usuario_error").classList.add("inputcorrecto");
-<<<<<<< HEAD
                 puede = true
 
             } else {
@@ -159,26 +142,6 @@ if (puede){
 }else{
     alert("complete los campos bien")
 }
-=======
-
-            } else {
-                document.getElementById("usuario_error").innerHTML = "Sólo letras, numeros, guion y guion_bajo";
-                document.getElementById("usuario_error").classList.remove("inputcorrecto");
-                document.getElementById("usuario_error").classList.add("inputerror")
-            }
-        break;
-        case "contrasena":
-            if (expresiones.password.test(validar.target.value)){
-                document.getElementById("contrasena_error").innerHTML = "Es válido!";
-                document.getElementById("contrasena_error").classList.add("inputcorrecto");
-            } else {
-                document.getElementById("contrasena_error").innerHTML = "Ingrese un contraseña valida";
-                document.getElementById("contrasena_error").classList.remove("inputcorrecto");
-                document.getElementById("contrasena_error").classList.add("inputerror")
-            }
-        break;
-    }
->>>>>>> benjaminespinoza
 }
 document
 .getElementById('idform_formularioregistro')
@@ -190,7 +153,6 @@ document
     });
 
 
-<<<<<<< HEAD
 /* ----------------------------------------------------------*/
 
 const form_sesion = document.getElementById("formulario_iniciarSesion");
@@ -199,20 +161,11 @@ const contrasena_sesion = document.getElementById("ficontrasena");
 const error_sesion = document.getElementById("error_sesion");
 error_sesion.style.color="red";
 
-=======
-const form_sesion = document.getElementById("formulario_iniciarSesion");
-const usuario_sesion = document.getElementById("fiusuario");
-const contrasena_sesion = document.getElementById("ficontrasena");
-const error_sesion = document.getElementById("error_sesion");
-error_sesion.style.color="red";
-
->>>>>>> benjaminespinoza
 form_sesion.addEventListener("submit", (hacer) => {
     hacer.preventDefault();
 })
 
 function enviarSesion() {
-<<<<<<< HEAD
     const p = true; 
     if(usuario_sesion.value === null || usuario_sesion.value === ""){
         error_sesion.innerHTML = "Debes ingresar tu nombre de usuario";
@@ -247,12 +200,3 @@ async function iniciosecion(datos){
 
 
 /* ------------------------------------------------------- */
-=======
-    if(usuario_sesion.value === null || usuario_sesion.value === ""){
-        error_sesion.innerHTML = "Debes ingresar tu nombre de usuario";
-    }
-    if(contrasena_sesion.value === null || contrasena_sesion.value === ""){
-        error_sesion.innerHTML = "Debes ingresar tu contraseña";
-    }
-}
->>>>>>> benjaminespinoza

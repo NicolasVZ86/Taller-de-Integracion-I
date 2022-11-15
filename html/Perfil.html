@@ -13,8 +13,8 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../java/loginpaginas.js"></script>
-    <script>window.onload=logeadoenpagina();</script>
-
+    <link rel="icon" href="../imagenes/logo_uct.webp"/>
+    
 </head>
 <body class="link_1">
     <header>
@@ -22,7 +22,6 @@
             <img src="../imagenes/gamer.webp" alt="no ta">
             <button id="modoos" onclick="hola()">Modo Claro</button>
             <h1>Torneos UCT</h1>
-            <div id="botonlog"></div>
         </div>
         <div id="header">
 			<ul class="nav">
@@ -43,6 +42,8 @@
                 <li><a onclick="logeado('../html/Perfil.html')">Perfil</a>
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
+                        
+                        <li><button onclick="cerses()" id="botlog"> cerrar sesion </button></li>
                     </ul>
                 </li>
                 <li><a href="../html/quienes_somos.html">Quienes somos</a></li>
@@ -69,7 +70,7 @@
             </div>
             <div class="usuario_cuerpo">
                 <div class="descripcion">
-                    <h3>Nombre usuario</h3>
+                    <h3 id="usuario">Nombre usuario</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 
