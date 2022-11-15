@@ -211,3 +211,16 @@ footer {
     align-items: center;
     width: 51%;
 }
+
+#ver {
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+    background: linear-gradient(#1497be, #ed0505);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /*motor de renderizado de los navegadores webkit */
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+
+}
