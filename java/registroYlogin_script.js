@@ -188,6 +188,9 @@ async function iniciosecion(datos){
             body: datos});
         const mensaje = await men.json();
         alert(mensaje.status)
+        if("sesion iniciada" == mensaje.status){
+            location.href = "../html/Perfil.html"
+        }
 }
     document
     .getElementById('formulario_iniciarSesion')

@@ -21,6 +21,7 @@ $ss = "sesion iniciada";
 $sn = "contrasena o usuario no encontrados";
 
 
+
 $resultado = mysqli_query($conn,$sql);
 
 $filas = mysqli_num_rows($resultado);
