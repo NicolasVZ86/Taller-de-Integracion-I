@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="../css/crearTorneo.css" />
     <link rel="stylesheet" href="../css/style_footer.css">
     <link rel="stylesheet" href="../css/estiloheader.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    
-    <title>Registro</title>  
-    <script src="../java/loginpaginas.js"></script>  
-    <link rel="icon" href="../imagenes/logo_uct.webp"/>
-
+    <script src="../java/loginpaginas.js"></script>
+    <title>Registro</title>    
 </head>
 
 <body id="contenedor-formulario-registro" class="link_1">
@@ -43,8 +41,7 @@
                     <ul>
                         <li><a href="../html/registroYlogin.html">Login y Registro</a></li>
                         
-                        <li><button onclick="cerses()" id="botlog"> cerrar sesion </button>
-                        </li>
+                        <li><button onclick="cerses()" id="botlog"> cerrar sesion </button></li>
                     </ul>
                 </li>
                 <li><a href="../html/quienes_somos.html">Quienes somos</a></li>
@@ -60,23 +57,28 @@
                     <!--Lado izquierdo-->
                     <div class="item1Gridleft_formulario">
                         <label for="nombreTorneo">
-                            Nombre del torneo <br><input type="text" name="nombreTorneo" id="" placeholder="Nombre del torneo">
+                            Nombre del torneo <br><input type="text" name="nombreTorneo" id="nombreTorneo" placeholder="Nombre del torneo">
                         </label>
                         <br>
                         <label for="selectGame">
                             Seleccione el juego/deporte <br>
-                            <select name="" id="selectGame">
-                                <option value="Rocket league">Rocket league</option>
-                                <option value="League of legends">League of legends</option>
-                                <option value="Valorant">Valorant</option>
-                                <option value="Counter Strike">Counter Strike</option>
+                            <select name="selectGame" id="selectGame">
+                                <option value="1">League of legends</option>
+                                <option value="2">Counter Strike</option>
+                                <option value="3">Basketball</option>
+                                <option value="4">Futbol</option>
                             </select>
                         </label>
                         <br>
 
                         <label for="cantidad_llaves">
-                            Cantidad de llaves <br><input type="number" name="cantidad_llaves" min="4"
-                                id="cantidad_llaves" placeholder="Cantidad de llaves">
+                            Cantidad de llaves <br>
+                            <select name="selectLlaves" id="selectLlaves">
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="16">16</option>
+                                <option value="24">24</option>
+                            </select>
                         </label>
                     </div>
 
@@ -84,23 +86,26 @@
                     <div class="item2Girdright_formulario">
                         <label for="modoGame_Rocketleague">
                             Seleccione modo de juego <br>
-                            <select name="" id="modoGame_Rocketleague">
-                                <option value="2v2">2vs2</option>
-                                <option value="3v3">3vs3</option>
+                            <select name="Modjuego" id="Modjuego">
+                                <option value="1vs1">Individual</option>
+                                <option value="2vs2">2vs2</option>
+                                <option value="3vs3">3vs3</option>
+                                <option value="4vs4">4vs4</option>
+                                <option value="5vs5">5vs5</option>
                             </select>
                         </label>
                         <br>
 
-                        <label for="modoGame_CounterStrike">
+                        <!-- <label for="modoGame_CounterStrike">
                             Seleccione el modo de juego <br>
                             <select name="" id="modoGame_CounterStrike">
                                 <option value="competitivo">Competitivo</option>
                                 <option value="companeros">Compañeros</option>
                             </select>
-                        </label>
+                        </label> -->
                         <br>
                         <label for="dateTorneo">
-                            Fecha inicio <br><input type="date" name="" id="dateTorneo">
+                            Fecha inicio <br><input type="date" name="dateTorneo" id="dateTorneo">
                         </label>
                         
                     </div>
@@ -110,6 +115,7 @@
                     <input type="button" id="boton" value="Crear Torneo">
                 </div>
             </form>
+            <script src="../java/Sub_Torneos.js"></script>
         </article>
     </main>
     <footer class="pie-pagina">
@@ -143,4 +149,6 @@
     </footer>
     
 </body>
+
 <script src="../java/header.js"></script>
+</html>
