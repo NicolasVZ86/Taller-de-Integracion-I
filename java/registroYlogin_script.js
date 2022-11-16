@@ -202,4 +202,28 @@ async function iniciosecion(datos){
         });
 
 
-/* ------------------------------------------------------- */
+
+/* -------------Ver la contraseña en el registro--------------- */
+var input = document.getElementById('frcontrasena');
+var boton = document.getElementById("boton");
+
+boton.addEventListener('click', mostrarContrasena);
+
+function mostrarContrasena() {
+    if (input.type == "password") {
+        input.type = "text"
+
+        setTimeout("ocultar()", 3000)
+    } else {
+        input.type = "password"
+    }
+}
+
+function ocultar() {
+    input.type = "password"
+}
+
+/* -------------Script que genera una contraseña aleatorea--------------- */
+function GenerarContrasena() {
+    var caracteres = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*()_+";
+}
