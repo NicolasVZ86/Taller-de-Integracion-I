@@ -16,7 +16,6 @@ $selectLlaves=$_POST['llaves'];
 $Modjuego=$_POST['Modo_juego'];
 $dateTorneo=$_POST['fecha'];
 
-echo "Hola ".$nombreTorneo." ".$selectGame." ".$selectLlaves." ".$Modjuego."            ".$dateTorneo;
 
 $query ="INSERT INTO torneo(
     nom_torn,

@@ -11,6 +11,25 @@ $(document).ready(function(){
     buscar_datos();
 });
 
+$('#Buscar').click(function(){
+    var nombre=document.getElementById("xName").value;
+    var Game=document.getElementById("xJuego").value;
+    var llaves=document.getElementById("xLlave").value;
+    var Modo_juego=document.getElementById("xModo").value;
+
+    var ruta="nom="+nombre+"&game="+Game+"&llaves="+llaves+"&Modo_juego="+Modo_juego;
+
+    $.ajax({
+        url:"../php/Filtro.php",
+        type: "POST",
+        data: ruta,
+    })
+    .done(function(res){
+        $('#datos').html(res);
+    })
+
+})
+
 
 
 

@@ -24,7 +24,7 @@ footer{
     align-items: center;
 }
 .filtro{
-    background:linear-gradient(#b3f, transparent);
+    background:linear-gradient(black, rgb(56, 56, 56));
     width: 80%;
     height: 100px;
     display: flex;
