@@ -26,6 +26,8 @@ header {
 #mainitem_formularios {
     grid-area: ladoizquierdo;
     color: aliceblue;
+    justify-self: center;
+    width: 500px;
 }
 /*formulario registro*/
 #article_formularioregistro {
@@ -146,4 +148,16 @@ legend {
 }
 .inputcorrecto {
     background-color: green;
+}
+
+
+/*Estilo ver contrasena*/
+#opciones_password {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#opciones_password button {
+    padding: 5px;
+    background-color: rgb(75, 150, 219);
 }

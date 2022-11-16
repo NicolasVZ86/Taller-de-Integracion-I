@@ -102,11 +102,11 @@ function validarFormulario (validar) {
         break;
         case "contrasena":
             if (expresiones.password.test(validar.target.value)){
-                document.getElementById("contrasena_error").innerHTML = "Es válido!";
+                document.getElementById("contrasena_error").innerHTML = "Es valida!";
                 document.getElementById("contrasena_error").classList.add("inputcorrecto");
                 puede = true
             } else {
-                document.getElementById("contrasena_error").innerHTML = "Ingrese un contraseña valida";
+                document.getElementById("contrasena_error").innerHTML = "Minímo de 4 caracteres. hasta 12 caracteres";
                 document.getElementById("contrasena_error").classList.remove("inputcorrecto");
                 document.getElementById("contrasena_error").classList.add("inputerror")
             }
@@ -202,4 +202,27 @@ async function iniciosecion(datos){
         });
 
 
-/* ------------------------------------------------------- */
+/* -------------Ver la contraseña en el registro--------------- */
+var input = document.getElementById('frcontrasena');
+var boton = document.getElementById("boton");
+
+boton.addEventListener('click', mostrarContrasena);
+
+function mostrarContrasena() {
+    if (input.type == "password") {
+        input.type = "text"
+
+        setTimeout("ocultar()", 3000)
+    } else {
+        input.type = "password"
+    }
+}
+
+function ocultar() {
+    input.type = "password"
+}
+
+/* -------------Script que genera una contraseña aleatorea--------------- */
+function GenerarContrasena() {
+    var caracteres = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*()_+";
+}
