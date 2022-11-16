@@ -213,6 +213,7 @@ function mostrarContrasena() {
     if (input.type == "password") {
         input.type = "text"
 
+        //Mostrará la contraseña por 3 segundo
         setTimeout("ocultar()", 3000)
     } else {
         input.type = "password"
@@ -224,6 +225,17 @@ function ocultar() {
 }
 
 /* -------------Script que genera una contraseña aleatorea--------------- */
-function GenerarContrasena() {
-    var caracteres = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*()_+";
+function Generar() {
+    const caracteres = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*()_+";
+
+    let clave_cadena = 12;
+    let clave = '';
+
+    /**/
+    for (let i=0; i < clave_cadena; i++){
+        let numRandom = Math.floor(Math.random()*caracteres.length);
+        
+        clave += caracteres.substring(numRandom, numRandom+1);
+    }
+    document.getElementById('frcontrasena').value = clave;
 }
