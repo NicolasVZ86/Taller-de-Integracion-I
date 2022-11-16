@@ -15,3 +15,9 @@ function buscar_datos(consulta) {
         })
 }
 
+async function usu(){
+    const usu = await fetch('../php/usu.php');
+    const mensaje = await usu.json();
+    document.getElementById('usuario').innerHTML=mensaje.usuario;
+}
+usu();
