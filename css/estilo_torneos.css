@@ -3,7 +3,7 @@
     padding:0;
 }
 body{
-    background-color: #031728;
+    background-color: rgb(3, 23, 40);
     color: rgb(255, 184, 0)
 }
 
@@ -17,6 +17,24 @@ footer{
     height: 200px;
 }
 
+
+/* body{
+    display: grid ;
+    grid-template-rows: [y1]20%[y2]720px[y3]10%;
+}
+header{
+    background-color: aquamarine;
+    grid-row-start: y1;
+}
+main{
+    grid-row-start:y2;
+    background-color: blue;
+}
+/* footer{
+    color: antiquewhite;
+    grid-row-start: y3;
+    background-color: black;
+} */
 .buscador{
     display: flex ;
     flex-wrap: wrap;
@@ -24,16 +42,13 @@ footer{
     align-items: center;
 }
 .filtro{
-    background:linear-gradient(black, rgb(56, 56, 56));
+    background:linear-gradient(#b3f, transparent);
     width: 80%;
     height: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
-
 .filtro form{
-    display: flex;
     font-size: 15px;
     padding: 10px ;
 }
@@ -41,8 +56,6 @@ footer{
     background-color: gray;
     color:white;
     height: 50px;
-    margin: 10px;
-    
 }
 .filtro form input::placeholder{
     color:white;
@@ -52,7 +65,6 @@ footer{
     color:white;
     height: 55px;
     border: 2px solid black;
-    margin: 10px;
 }
 .filtro form button{
     background-color: gray;
@@ -60,40 +72,39 @@ footer{
     height: 55px;
     width: 100px;
     border-color:black;
-    margin: 10px;
 }
-#datos{
+.tourn{
     display: flex;
     justify-content: center;
 
 }
-#datos table{
+.tourn .tabla{
     margin: 20px;
     text-align: left;
     border-collapse: collapse;
     background-color: lightgray;
 }
-#datos th{
+.tourn th{
     padding: 10px;
     background-color: gray;
     border: 4px solid white;
 }
 
-#datos td{
+.tourn td{
     padding: 10px;
     border: 4px solid gray;
 }
-/* @media (max-width: 750px) {
+@media (max-width: 750px) {
     .filtro {
         width: 100%;
     }
-    .filtro .xName,
-    .filtro .xJuego,
-    .filtro .xLlaves,
+    .filtro .xnombre,
+    .filtro .xjuego,
+    .filtro .xllaves,
     .filtro .buscar{
         width: 100px;
     }
     .tourn {
         width: 95%;
     }
-} */
+}
